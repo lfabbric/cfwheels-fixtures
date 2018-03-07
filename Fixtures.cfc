@@ -32,20 +32,18 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
         return dumpDataObj.execute(arguments.filePath);
     }
 
-    public function clearData(array fixtures = [], boolean enableDropTables = true) {
+    public function clearData(array fixtures = []) {
          if (!arrayLen(arguments.fixtures)) {
             throw(type="Fixtures.Missing", message="Missing fixtures to load");
         }
         var settings = $loadFixtureSettings();
         var dataSourceName = $getFixtureDataSourceName();
-        var cleanDataObj = new cfc.CleanData(
+        var clearDataObj = new cfc.ClearData(
             arguments.fixtures,
             dataSourceName,
-            settings.path,
-            arguments.enableDropTables,
-            arguments.enableCleanData
+            settings.path
         );
-        cleanDataObj.execute();
+        clearDataObj.execute();
     }
 
     // @hint private
