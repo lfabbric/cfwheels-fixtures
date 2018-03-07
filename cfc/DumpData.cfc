@@ -26,9 +26,9 @@ component extends="Base" output="false" accessors="true" {
                 response.constraints = daoAdapter.getConstraints(table);
                 response.records = [];
                 // cant find non-plurar tables
-                model = new wheels.Model().$initModelClass("#table#", "");
-                var results = model.findAll(maxRows=this.maxRows);
-                var primaryKeys = model.primaryKeys();
+                var tmpModel = new wheels.Model().$initModelClass("#table#", "");
+                var results = tmpModel.findAll(maxRows=this.maxRows);
+                var primaryKeys = tmpModel.primaryKeys();
                 response.primaryKeys = primaryKeys;
                 for (result in results) {
                     response.records.append({
