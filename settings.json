@@ -1,0 +1,6 @@
+{
+    "format" : "json",
+    "indent": 4,
+    "path": "/tests/fixtures/",
+    "unittest_database": "ppstest"
+}
