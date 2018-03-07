@@ -56,7 +56,7 @@ enablePopulateTables | `boolean` | optional | true | When loading data, you can 
 
 ### Clear Data
 Wipe database tables clean... In other words, drop tables specified in your fixtures.
-```
+```java
     clearData(fixtures = ["markets.json"]);
 ```
 
@@ -64,3 +64,27 @@ Wipe database tables clean... In other words, drop tables specified in your fixt
 Parameter | Type | Required | Default | Description
 --- | --- | --- | --- | ---
 fixtures | `array` | true |  | Specify which files to load the fixtures from.
+
+
+## Example
+
+```java
+component extends="wheelsMapping.Test" {
+
+    function setup() {
+        loadData(fixtures = ["users.json"]);
+    }
+
+    function tearDown() {
+        clearData(fixtures = ["users.json"]);
+    }
+
+    function test_user_authentication() {
+        user = model("user").findOne(
+            where = "id=12345",
+            include = "roles"
+        );
+        assert("user.canAuthenticate()");
+    }
+}
+```
