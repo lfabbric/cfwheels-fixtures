@@ -17,6 +17,9 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
             arguments.enableCreateTables,
             arguments.enablePopulateTables
         );
+        if (settings.keyExists("unittest_database_schema") && len(settings.unittest_database_schema)) {
+            loadDataObj.setDataSourceSchema(settings.unittest_database_schema);
+        }
         loadDataObj.parse();
     }
 
@@ -26,9 +29,12 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
             tables = arguments.tables,
             dataSource = $getFixtureDataSourceName(isUnitTest=false),
             maxRows = arguments.maxRows,
-            overWriteEnabled = arguments.overWriteFileEnabled
+            overWriteFileEnabled = arguments.overWriteFileEnabled
         );
         dumpDataObj.setIndent(settings.indent);
+        if (settings.keyExists("database_schema") && len(settings.database_schema)) {
+            dumpDataObj.setDataSourceSchema(settings.database_schema);
+        }
         return dumpDataObj.execute(arguments.filePath);
     }
 

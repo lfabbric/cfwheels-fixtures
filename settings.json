@@ -2,5 +2,7 @@
     "format" : "json",
     "indent": 4,
     "path": "/tests/fixtures/",
-    "unittest_database": "ppstest"
+    "unittest_database": "ppsmysqltest",
+    "unittest_database_schema": "ppstest",
+    "database_schema": "store"
 }

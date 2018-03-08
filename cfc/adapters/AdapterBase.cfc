@@ -125,7 +125,7 @@ component {
                 return sqlTypeResults[getDatabaseType()][item];
             }
         }
-        throw(type="Fixtures.ADAPTERS.SQLDAO.InvalidSqlType", message="Invalid SQLType Mapping: #revisedFieldName#");
+        throw(type="Fixtures.ADAPTERS.InvalidSqlType", message="Invalid SQLType Mapping: #revisedFieldName#");
     }
 
     private string function cleanFieldName(required string fieldName) {

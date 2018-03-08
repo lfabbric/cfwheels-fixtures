@@ -1,8 +1,9 @@
-component implements="AdapterIF" extends="SQLDAO" {
-    public any function init(required string dataSource) {
+component implements="AdapterIF" extends="AdapterBase" {
+    public any function init(required string dataSource, string tableSchema = "") {
         super.init();
         this.database = "SQLServer";
         this.dataSourceName = arguments.dataSource;
+        this.tableSchema = arguments.tableSchema;
         return this;
     }
 
