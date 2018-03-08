@@ -18,7 +18,7 @@ component implements="AdapterIF" extends="AdapterBase" {
                 IF(information_schema.table_constraints.constraint_type = 'PRIMARY KEY', true, false) AS is_primary_key,
                 IF(information_schema.table_constraints.constraint_type = 'UNIQUE', true, false) AS is_unique_constraint,
                 information_schema.table_constraints.constraint_catalog AS type_desc,
-                information_schema.key_column_usage.column_name AS name    
+                information_schema.key_column_usage.column_name AS name
             FROM information_schema.table_constraints
             LEFT JOIN information_schema.key_column_usage ON 
                 information_schema.table_constraints.table_name = information_schema.key_column_usage.table_name
@@ -70,89 +70,79 @@ component implements="AdapterIF" extends="AdapterBase" {
     }
 
     public array function dropTable(required string table) {
-        // var errors = [];
-        // var query = new query();
-        // query.setDatasource(this.dataSourceName);
-        
-        // try {
-        //     var sql = "
-        //         SELECT 
-        //             'ALTER TABLE [' +  OBJECT_SCHEMA_NAME(parent_object_id) +
-        //             '].[' + OBJECT_NAME(parent_object_id) + 
-        //             '] DROP CONSTRAINT [' + name + ']' AS dropconstraint
-        //         FROM sys.foreign_keys
-        //         WHERE
-        //             referenced_object_id = object_id('#arguments.table#')
-        //     ";
-        //     query.setSql(sql);
-        //     var results = query.execute().getResult();
-        // } catch (any e) {
-        //     errors.append("Failed to find constrains for table #arguments.table#");
-        // }
-
-        // for (result in results) {
-        //     try {
-        //         query = new query();
-        //         query.setDatasource(this.dataSourceName);
-        //         query.setSQL(result.dropconstraint);
-        //         restults = query.execute().getPrefix();
-        //     } catch (any e) {
-        //         errors.append("Could not delete the constrains for the table #arguments.table#");
-        //     }
-        // }
-
-        // try {
-        //     query = new query();
-        //     query.setDatasource(this.dataSourceName);
-        //     query.setSQL("
-        //         DROP TABLE #arguments.table#
-        //     ");
-        //     results = query.execute().getPrefix();
-        // } catch (any e) {
-        //     errors.append("Could not drop the table #arguments.table#");
-        // }
-        // return errors;
+        var initialForeignKeyCheckStatus = getForeignKeyCheckStatus();
+        setForeignKeyCheckStatus(0);
+        var errors = [];
+        var query = new query();
+        query.setDatasource(this.dataSourceName);
+        try {
+            query.setSql("DROP TABLE #arguments.table#");
+            var results = query.execute().getResult();
+        } catch (any e) {
+            errors.append("Could not drop table #arguments.table#");
+        }
+        setForeignKeyCheckStatus(initialForeignKeyCheckStatus);
+        return errors;
     }
 
     public array function populate(required array results, required tableDefinitions, required string table) {
-        // var errors = [];
-        // setIdentity(true, arguments.table);
-        // for (result in arguments.results) {
-        //     var query = new query();
-        //     query.setDatasource(this.dataSourceName);
-        //     var columns = [];
-        //     var columnValues = [];
-        //     for (var column in result.fields) {
-        //         columns.append(column);
-        //         columnValues.append(":#column#");
-        //         for (var tableDefinition in arguments.tableDefinitions) {
-        //             if (tableDefinition.column_name.findNoCase(column)) {
-        //                 argumentCollection = {
-        //                     "name" = lcase(column),
-        //                     "value" = "#result.fields[column]#",
-        //                     "cfsqltype" = getSqlType(tableDefinition.type_name)
-        //                 };
-        //                 if (!len(result.fields[column])) {
-        //                     argumentCollection.null = true;
-        //                 }
-        //                 query.addParam(argumentCollection=argumentCollection);
-        //                 break;
-        //             }
-        //         }
-        //     }
-        //     var sql = "
-        //         INSERT INTO #arguments.table# (#lcase(columns.toList())#)
-        //         VALUES (#lcase(columnValues.toList())#)
-        //     ";
-        //     try {
-        //         query.setSql(sql);
-        //         query.execute();
-        //     } catch(any e) {
-        //         errors.append("An error was experienced inserting the following commands #sql# on table #arguments.table#");
-        //     }
-        // }
-        // setIdentity(false, arguments.table);
-        // return errors;
+        var errors = [];
+        for (result in arguments.results) {
+            var query = new query();
+            query.setDatasource(this.dataSourceName);
+            var columns = [];
+            var columnValues = [];
+            for (var column in result.fields) {
+                columns.append(column);
+                columnValues.append(":#column#");
+                for (var tableDefinition in arguments.tableDefinitions) {
+                    if (tableDefinition.column_name.findNoCase(column)) {
+                        var cfSQLType = "CF_SQL_VARCHAR";
+                        try {
+                            cfSQLType = getSqlType(tableDefinition.type_name);
+                        } catch (any e) {
+                            errors.append(e.message);
+                        }
+                        argumentCollection = {
+                            "name" = lcase(column),
+                            "value" = "#result.fields[column]#",
+                            "cfsqltype" = cfSQLType
+                        };
+                        if (!len(result.fields[column])) {
+                            argumentCollection.null = true;
+                        }
+                        query.addParam(argumentCollection=argumentCollection);
+                        break;
+                    }
+                }
+            }
+            var sql = "
+                INSERT INTO #arguments.table# (#lcase(columns.toList())#)
+                VALUES (#lcase(columnValues.toList())#)
+            ";
+            try {
+                query.setSql(sql);
+                query.execute();
+            } catch(any e) {
+                errors.append("An error was experienced inserting the following commands #sql# on table #arguments.table#");
+            }
+        }
+        return errors;
+    }
+
+    private numeric function getForeignKeyCheckStatus() {
+        var query = new query();
+        query.setDatasource(this.dataSourceName);
+        query.setSql("SELECT @@FOREIGN_KEY_CHECKS AS status");
+        return query.execute().getResult().status;
+    }
+
+    private void function setForeignKeyCheckStatus(numeric status = 1) {
+        var query = new query();
+        query.setDatasource(this.dataSourceName);
+        query.addParam(name="status", value=arguments.status, cfsqltype="CF_SQL_INTEGER");
+        query.setSql("SET foreign_key_checks = :status");
+        query.execute();
     }
 
     private struct function $formatConstraints(required array constraints) {
