@@ -1,8 +1,8 @@
 {
     "name":"CFWheels Fixture Support",
-    "version":"0.0.1",
+    "version":"0.0.2",
     "author":"Landon Fabbricino",
-    "location":"lfabbric/cfwheels-fixtures#v0.0.1",
+    "location":"lfabbric/cfwheels-fixtures#v0.0.2",
     "directory":"/plugins/",
     "createPackageDirectory":true,
     "packageDirectory":"fixtures",
