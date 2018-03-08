@@ -17,7 +17,10 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
             arguments.enableCreateTables,
             arguments.enablePopulateTables
         );
-        loadDataObj.parse();
+        if (settings.keyExists("unittest_database_schema") && len(settings.unittest_database_schema)) {
+            loadDataObj.setDataSourceSchema(settings.unittest_database_schema);
+        }
+        return loadDataObj.parse();
     }
 
     public string function dumpData(required array tables, string filePath = "", boolean overWriteFileEnabled = false, numeric maxRows = -1) {
@@ -26,14 +29,17 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
             tables = arguments.tables,
             dataSource = $getFixtureDataSourceName(isUnitTest=false),
             maxRows = arguments.maxRows,
-            overWriteEnabled = arguments.overWriteFileEnabled
+            overWriteFileEnabled = arguments.overWriteFileEnabled
         );
         dumpDataObj.setIndent(settings.indent);
+        if (settings.keyExists("database_schema") && len(settings.database_schema)) {
+            dumpDataObj.setDataSourceSchema(settings.database_schema);
+        }
         return dumpDataObj.execute(arguments.filePath);
     }
 
-    public function clearData(array fixtures = []) {
-         if (!arrayLen(arguments.fixtures)) {
+    public array function clearData(array fixtures = []) {
+        if (!arrayLen(arguments.fixtures)) {
             throw(type="Fixtures.Missing", message="Missing fixtures to load");
         }
         var settings = $loadFixtureSettings();
@@ -43,7 +49,10 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
             dataSourceName,
             settings.path
         );
-        clearDataObj.execute();
+        if (settings.keyExists("unittest_database_schema") && len(settings.unittest_database_schema)) {
+            clearDataObj.setDataSourceSchema(settings.unittest_database_schema);
+        }
+        return clearDataObj.execute();
     }
 
     // @hint private

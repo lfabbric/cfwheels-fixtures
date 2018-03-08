@@ -15,6 +15,8 @@ component {
         for (type in this.dataBaseTypes) {
             if (driverName.findNoCase(type)) {
                 return type;
+            } else {
+                return this.JDBC;
             }
         }
     }
@@ -92,6 +94,9 @@ component {
                 "BINARY" = "CF_SQL_BINARY",
                 "BIT" = "CF_SQL_BIT",
                 "BLOB" = "CF_SQL_BLOB",
+                "LONGBLOB" = "CF_SQL_BLOB",
+                "MEDIUMBLOB" = "CF_SQL_BLOB",
+                "TINYBLOB" = "CF_SQL_BLOB",
                 "CHAR" = "CF_SQL_CHAR",
                 "CLOB" = "CF_SQL_CLOB",
                 "DATE" = "CF_SQL_DATE",
@@ -100,9 +105,12 @@ component {
                 "DOUBLE" = "CF_SQL_DOUBLE",
                 "FLOAT" = "CF_SQL_FLOAT",
                 "INTEGER" = "CF_SQL_INTEGER",
+                "INT" = "CF_SQL_INTEGER",
                 "LONGVARBINARY" = "CF_SQL_LONGVARBINARY",
                 "LONGNVARCHAR" = "CF_SQL_LONGNVARCHAR",
                 "LONGVARCHAR" = "CF_SQL_LONGVARCHAR",
+                "MEDIUMTEXT" = "CF_SQL_LONGVARCHAR",
+                "LONGTEXT" = "CF_SQL_LONGVARCHAR",
                 "NCHAR" = "CF_SQL_NCHAR",
                 "NULL" = "CF_SQL_NULL",
                 "NUMERIC" = "CF_SQL_NUMERIC",
@@ -114,9 +122,13 @@ component {
                 "STRUCT" = "CF_SQL_STRUCT",
                 "TIME" = "CF_SQL_TIME",
                 "TIMESTAMP" = "CF_SQL_TIMESTAMP",
+                "DATETIME" = "CF_SQL_TIMESTAMP",
                 "TINYINT" = "CF_SQL_TINYINT",
                 "VARBINARY" = "CF_SQL_VARBINARY",
-                "VARCHAR" = "CF_SQL_VARCHAR"
+                "VARCHAR" = "CF_SQL_VARCHAR",
+                "YEAR" = "CF_SQL_INTEGER",
+                "JSON" = "CF_SQL_VARCHAR",
+                "BOOLEAN" = "CF_SQL_BIT"
             }
         };
         var revisedFieldName = cleanFieldName(arguments.fieldName);
@@ -125,7 +137,7 @@ component {
                 return sqlTypeResults[getDatabaseType()][item];
             }
         }
-        throw(type="Fixtures.ADAPTERS.SQLDAO.InvalidSqlType", message="Invalid SQLType Mapping: #revisedFieldName#");
+        throw(type="Fixtures.ADAPTERS.InvalidSqlType", message="Invalid SQLType Mapping: #revisedFieldName#");
     }
 
     private string function cleanFieldName(required string fieldName) {

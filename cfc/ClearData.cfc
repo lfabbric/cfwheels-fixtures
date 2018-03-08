@@ -10,7 +10,6 @@ component extends="Base" output="false" accessors="true" {
     }
 
     public array function execute() {
-        var errors = [];
         var tables = [];
         for (fixture in this.fixtures) {
             try {
@@ -22,16 +21,17 @@ component extends="Base" output="false" accessors="true" {
             var fixtureCollections = validateAndDeSerializeJson(fileOutput);
             tables.addAll(fixtureCollections);
         }
-        $clean(tables);
-        abort;
+        return $clean(tables);
     }
 
-    private void function $clean(required array parsedFixtures) {
+    private array function $clean(required array parsedFixtures) {
+        var errors = [];
         var daoAdapter = getDatabaseFactory();
         for (fixture in arguments.parsedFixtures) {
             if (daoAdapter.tableExists(fixture.table)) {
-                daoAdapter.dropTable(fixture.table);
+                errors.append(daoAdapter.dropTable(fixture.table));
             }
         }
+        return errors;
     }
 }
