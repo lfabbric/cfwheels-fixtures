@@ -1,0 +1,999 @@
+[
+    {
+        "TABLE": "complextables",
+        "RECORDS": [
+            {
+                "fields": {
+                    "MESSAGE": "asdf",
+                    "CALCULATED": "",
+                    "AMOUNT": 1.10,
+                    "UPDATEDAT": "March, 08 2018 13:44:12",
+                    "TITLE2": "asdf",
+                    "CREATEDAT": "March, 08 2018 13:44:12",
+                    "TITLE": "asdf",
+                    "COUNT": 2,
+                    "TAX": 23.3,
+                    "ENABLED": 1,
+                    "ID": 1
+                },
+                "pk": 1
+            }
+        ],
+        "PRIMARYKEYS": "id",
+        "CONSTRAINTS": {
+            "COLUMNS": [
+                "CONSTRAINT_NAME",
+                "IS_PRIMARY_KEY",
+                "IS_UNIQUE_CONSTRAINT",
+                "TYPE_DESC",
+                "NAME"
+            ],
+            "DATA": [
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "id"
+                ],
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "id"
+                ],
+                [
+                    "title_UNIQUE",
+                    0,
+                    1,
+                    "def",
+                    "title"
+                ],
+                [
+                    "count_UNIQUE",
+                    0,
+                    1,
+                    "def",
+                    "count"
+                ]
+            ]
+        },
+        "COLUMNS": {
+            "COLUMNS": [
+                "COLUMN_NAME",
+                "TYPE_NAME",
+                "COLUMN_SIZE",
+                "DECIMAL_DIGITS",
+                "IS_NULLABLE",
+                "REMARKS",
+                "COLUMN_DEFAULT_VALUE",
+                "CHAR_OCTET_LENGTH",
+                "ORDINAL_POSITION",
+                "IS_PRIMARYKEY",
+                "IS_FOREIGNKEY",
+                "REFERENCED_PRIMARYKEY",
+                "REFERENCED_PRIMARYKEY_TABLE"
+            ],
+            "DATA": [
+                [
+                    "id",
+                    "INT",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    0,
+                    1,
+                    "YES",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "title",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    2,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "title2",
+                    "LONGTEXT",
+                    2147483647,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    2147483647,
+                    3,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "amount",
+                    "DECIMAL",
+                    10,
+                    2,
+                    "NO",
+                    "",
+                    null,
+                    0,
+                    4,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "count",
+                    "INT",
+                    10,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    5,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "message",
+                    "MEDIUMTEXT",
+                    16777215,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    16777215,
+                    6,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "tax",
+                    "FLOAT",
+                    12,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    7,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "calculated",
+                    "VARCHAR",
+                    45,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    45,
+                    8,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "enabled",
+                    "TINYINT",
+                    3,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    9,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "createdat",
+                    "TIMESTAMP",
+                    19,
+                    0,
+                    "YES",
+                    "",
+                    "CURRENT_TIMESTAMP",
+                    0,
+                    10,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "updatedat",
+                    "DATETIME",
+                    19,
+                    0,
+                    "YES",
+                    "",
+                    "CURRENT_TIMESTAMP",
+                    0,
+                    11,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ]
+            ]
+        }
+    },
+    {
+        "TABLE": "employees",
+        "RECORDS": [
+            {
+                "fields": {
+                    "REPORTSTO": "",
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Murphy",
+                    "FIRSTNAME": "Diane",
+                    "EXTENSION": "x5800",
+                    "EMAIL": "dmurphy@classicmodelcars.com",
+                    "JOBTITLE": "President",
+                    "EMPLOYEENUMBER": 1002
+                },
+                "pk": 1002
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1002,
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Patterson",
+                    "FIRSTNAME": "Mary",
+                    "EXTENSION": "x4611",
+                    "EMAIL": "mpatterso@classicmodelcars.com",
+                    "JOBTITLE": "VP Sales",
+                    "EMPLOYEENUMBER": 1056
+                },
+                "pk": 1056
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1002,
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Firrelli",
+                    "FIRSTNAME": "Jeff",
+                    "EXTENSION": "x9273",
+                    "EMAIL": "jfirrelli@classicmodelcars.com",
+                    "JOBTITLE": "VP Marketing",
+                    "EMPLOYEENUMBER": 1076
+                },
+                "pk": 1076
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1056,
+                    "OFFICECODE": 6,
+                    "LASTNAME": "Patterson",
+                    "FIRSTNAME": "William",
+                    "EXTENSION": "x4871",
+                    "EMAIL": "wpatterson@classicmodelcars.com",
+                    "JOBTITLE": "Sales Manager (APAC)",
+                    "EMPLOYEENUMBER": 1088
+                },
+                "pk": 1088
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1056,
+                    "OFFICECODE": 4,
+                    "LASTNAME": "Bondur",
+                    "FIRSTNAME": "Gerard",
+                    "EXTENSION": "x5408",
+                    "EMAIL": "gbondur@classicmodelcars.com",
+                    "JOBTITLE": "Sale Manager (EMEA)",
+                    "EMPLOYEENUMBER": 1102
+                },
+                "pk": 1102
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1056,
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Bow",
+                    "FIRSTNAME": "Anthony",
+                    "EXTENSION": "x5428",
+                    "EMAIL": "abow@classicmodelcars.com",
+                    "JOBTITLE": "Sales Manager (NA)",
+                    "EMPLOYEENUMBER": 1143
+                },
+                "pk": 1143
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Jennings",
+                    "FIRSTNAME": "Leslie",
+                    "EXTENSION": "x3291",
+                    "EMAIL": "ljennings@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1165
+                },
+                "pk": 1165
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 1,
+                    "LASTNAME": "Thompson",
+                    "FIRSTNAME": "Leslie",
+                    "EXTENSION": "x4065",
+                    "EMAIL": "lthompson@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1166
+                },
+                "pk": 1166
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 2,
+                    "LASTNAME": "Firrelli",
+                    "FIRSTNAME": "Julie",
+                    "EXTENSION": "x2173",
+                    "EMAIL": "jfirrelli@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1188
+                },
+                "pk": 1188
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 2,
+                    "LASTNAME": "Patterson",
+                    "FIRSTNAME": "Steve",
+                    "EXTENSION": "x4334",
+                    "EMAIL": "spatterson@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1216
+                },
+                "pk": 1216
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 3,
+                    "LASTNAME": "Tseng",
+                    "FIRSTNAME": "Foon Yue",
+                    "EXTENSION": "x2248",
+                    "EMAIL": "ftseng@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1286
+                },
+                "pk": 1286
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1143,
+                    "OFFICECODE": 3,
+                    "LASTNAME": "Vanauf",
+                    "FIRSTNAME": "George",
+                    "EXTENSION": "x4102",
+                    "EMAIL": "gvanauf@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1323
+                },
+                "pk": 1323
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 4,
+                    "LASTNAME": "Bondur",
+                    "FIRSTNAME": "Loui",
+                    "EXTENSION": "x6493",
+                    "EMAIL": "lbondur@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1337
+                },
+                "pk": 1337
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 4,
+                    "LASTNAME": "Hernandez",
+                    "FIRSTNAME": "Gerard",
+                    "EXTENSION": "x2028",
+                    "EMAIL": "ghernande@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1370
+                },
+                "pk": 1370
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 4,
+                    "LASTNAME": "Castillo",
+                    "FIRSTNAME": "Pamela",
+                    "EXTENSION": "x2759",
+                    "EMAIL": "pcastillo@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1401
+                },
+                "pk": 1401
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 7,
+                    "LASTNAME": "Bott",
+                    "FIRSTNAME": "Larry",
+                    "EXTENSION": "x2311",
+                    "EMAIL": "lbott@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1501
+                },
+                "pk": 1501
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 7,
+                    "LASTNAME": "Jones",
+                    "FIRSTNAME": "Barry",
+                    "EXTENSION": "x102",
+                    "EMAIL": "bjones@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1504
+                },
+                "pk": 1504
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1088,
+                    "OFFICECODE": 6,
+                    "LASTNAME": "Fixter",
+                    "FIRSTNAME": "Andy",
+                    "EXTENSION": "x101",
+                    "EMAIL": "afixter@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1611
+                },
+                "pk": 1611
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1088,
+                    "OFFICECODE": 6,
+                    "LASTNAME": "Marsh",
+                    "FIRSTNAME": "Peter",
+                    "EXTENSION": "x102",
+                    "EMAIL": "pmarsh@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1612
+                },
+                "pk": 1612
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1088,
+                    "OFFICECODE": 6,
+                    "LASTNAME": "King",
+                    "FIRSTNAME": "Tom",
+                    "EXTENSION": "x103",
+                    "EMAIL": "tking@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1619
+                },
+                "pk": 1619
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1056,
+                    "OFFICECODE": 5,
+                    "LASTNAME": "Nishi",
+                    "FIRSTNAME": "Mami",
+                    "EXTENSION": "x101",
+                    "EMAIL": "mnishi@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1621
+                },
+                "pk": 1621
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1621,
+                    "OFFICECODE": 5,
+                    "LASTNAME": "Kato",
+                    "FIRSTNAME": "Yoshimi",
+                    "EXTENSION": "x102",
+                    "EMAIL": "ykato@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1625
+                },
+                "pk": 1625
+            },
+            {
+                "fields": {
+                    "REPORTSTO": 1102,
+                    "OFFICECODE": 4,
+                    "LASTNAME": "Gerard",
+                    "FIRSTNAME": "Martin",
+                    "EXTENSION": "x2312",
+                    "EMAIL": "mgerard@classicmodelcars.com",
+                    "JOBTITLE": "Sales Rep",
+                    "EMPLOYEENUMBER": 1702
+                },
+                "pk": 1702
+            }
+        ],
+        "PRIMARYKEYS": "employeeNumber",
+        "CONSTRAINTS": {
+            "COLUMNS": [
+                "CONSTRAINT_NAME",
+                "IS_PRIMARY_KEY",
+                "IS_UNIQUE_CONSTRAINT",
+                "TYPE_DESC",
+                "NAME"
+            ],
+            "DATA": [
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "employeeNumber"
+                ],
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "employeeNumber"
+                ]
+            ]
+        },
+        "COLUMNS": {
+            "COLUMNS": [
+                "COLUMN_NAME",
+                "TYPE_NAME",
+                "COLUMN_SIZE",
+                "DECIMAL_DIGITS",
+                "IS_NULLABLE",
+                "REMARKS",
+                "COLUMN_DEFAULT_VALUE",
+                "CHAR_OCTET_LENGTH",
+                "ORDINAL_POSITION",
+                "IS_PRIMARYKEY",
+                "IS_FOREIGNKEY",
+                "REFERENCED_PRIMARYKEY",
+                "REFERENCED_PRIMARYKEY_TABLE"
+            ],
+            "DATA": [
+                [
+                    "employeeNumber",
+                    "INT",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    0,
+                    1,
+                    "YES",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "lastName",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    2,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "firstName",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    3,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "extension",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    4,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "email",
+                    "VARCHAR",
+                    100,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    100,
+                    5,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "officeCode",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    6,
+                    "NO",
+                    "YES",
+                    "officeCode",
+                    "offices"
+                ],
+                [
+                    "reportsTo",
+                    "INT",
+                    10,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    7,
+                    "NO",
+                    "YES",
+                    "employeeNumber",
+                    "employees"
+                ],
+                [
+                    "jobTitle",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    8,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ]
+            ]
+        }
+    },
+    {
+        "TABLE": "offices",
+        "RECORDS": [
+            {
+                "fields": {
+                    "POSTALCODE": 94080,
+                    "OFFICECODE": 1,
+                    "CITY": "San Francisco",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 650 219 4782",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "100 Market Street",
+                    "STATE": "CA",
+                    "ADDRESSLINE2": "Suite 300"
+                },
+                "pk": 1
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "02107",
+                    "OFFICECODE": 2,
+                    "CITY": "Boston",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 215 837 0825",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "1550 Court Place",
+                    "STATE": "MA",
+                    "ADDRESSLINE2": "Suite 102"
+                },
+                "pk": 2
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "OFFICECODE": 3,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 212 555 3000",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "523 East 53rd Street",
+                    "STATE": "NY",
+                    "ADDRESSLINE2": "apt. 5A"
+                },
+                "pk": 3
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 75017,
+                    "OFFICECODE": 4,
+                    "CITY": "Paris",
+                    "COUNTRY": "France",
+                    "PHONE": "+33 14 723 4404",
+                    "TERRITORY": "EMEA",
+                    "ADDRESSLINE1": "43 Rue Jouffroy D'abbans",
+                    "STATE": "",
+                    "ADDRESSLINE2": ""
+                },
+                "pk": 4
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "102-8578",
+                    "OFFICECODE": 5,
+                    "CITY": "Tokyo",
+                    "COUNTRY": "Japan",
+                    "PHONE": "+81 33 224 5000",
+                    "TERRITORY": "Japan",
+                    "ADDRESSLINE1": "4-1 Kioicho",
+                    "STATE": "Chiyoda-Ku",
+                    "ADDRESSLINE2": ""
+                },
+                "pk": 5
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "NSW 2010",
+                    "OFFICECODE": 6,
+                    "CITY": "Sydney",
+                    "COUNTRY": "Australia",
+                    "PHONE": "+61 2 9264 2451",
+                    "TERRITORY": "APAC",
+                    "ADDRESSLINE1": "5-11 Wentworth Avenue",
+                    "STATE": "",
+                    "ADDRESSLINE2": "Floor #2"
+                },
+                "pk": 6
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "EC2N 1HN",
+                    "OFFICECODE": 7,
+                    "CITY": "London",
+                    "COUNTRY": "UK",
+                    "PHONE": "+44 20 7877 2041",
+                    "TERRITORY": "EMEA",
+                    "ADDRESSLINE1": "25 Old Broad Street",
+                    "STATE": "",
+                    "ADDRESSLINE2": "Level 7"
+                },
+                "pk": 7
+            }
+        ],
+        "PRIMARYKEYS": "officeCode",
+        "CONSTRAINTS": {
+            "COLUMNS": [
+                "CONSTRAINT_NAME",
+                "IS_PRIMARY_KEY",
+                "IS_UNIQUE_CONSTRAINT",
+                "TYPE_DESC",
+                "NAME"
+            ],
+            "DATA": [
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "officeCode"
+                ],
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "officeCode"
+                ]
+            ]
+        },
+        "COLUMNS": {
+            "COLUMNS": [
+                "COLUMN_NAME",
+                "TYPE_NAME",
+                "COLUMN_SIZE",
+                "DECIMAL_DIGITS",
+                "IS_NULLABLE",
+                "REMARKS",
+                "COLUMN_DEFAULT_VALUE",
+                "CHAR_OCTET_LENGTH",
+                "ORDINAL_POSITION",
+                "IS_PRIMARYKEY",
+                "IS_FOREIGNKEY",
+                "REFERENCED_PRIMARYKEY",
+                "REFERENCED_PRIMARYKEY_TABLE"
+            ],
+            "DATA": [
+                [
+                    "officeCode",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    1,
+                    "YES",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "city",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    2,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "phone",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    3,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine1",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    4,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine2",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    5,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "state",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    6,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "country",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    7,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "postalCode",
+                    "VARCHAR",
+                    15,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    15,
+                    8,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "territory",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    9,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ]
+            ]
+        }
+    }
+]

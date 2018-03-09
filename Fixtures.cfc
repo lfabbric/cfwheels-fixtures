@@ -8,7 +8,7 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
         if (!arrayLen(arguments.fixtures)) {
             throw(type="Fixtures.Missing", message="Missing fixtures to load");
         }
-        var settings = $loadFixtureSettings();
+        var settings = $loadFixtureSettings(argumentCollection=arguments);
         var dataSourceName = $getFixtureDataSourceName();
         var loadDataObj = new cfc.LoadData(
             arguments.fixtures,
@@ -24,10 +24,10 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
     }
 
     public string function dumpData(required array tables, string filePath = "", boolean overWriteFileEnabled = false, numeric maxRows = -1) {
-        var settings = $loadFixtureSettings();
+        var settings = $loadFixtureSettings(argumentCollection=arguments);
         var dumpDataObj = new cfc.DumpData(
             tables = arguments.tables,
-            dataSource = $getFixtureDataSourceName(isUnitTest=false),
+            dataSource = $getFixtureDataSourceName(isUnitTest=false, argumentCollection=arguments),
             maxRows = arguments.maxRows,
             overWriteFileEnabled = arguments.overWriteFileEnabled
         );
@@ -42,7 +42,7 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
         if (!arrayLen(arguments.fixtures)) {
             throw(type="Fixtures.Missing", message="Missing fixtures to load");
         }
-        var settings = $loadFixtureSettings();
+        var settings = $loadFixtureSettings(argumentCollection=arguments);
         var dataSourceName = $getFixtureDataSourceName();
         var clearDataObj = new cfc.ClearData(
             arguments.fixtures,
@@ -56,16 +56,21 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
     }
 
     // @hint private
-    public string function $getFixtureDataSourceName(boolean isUnitTest = true, string overLoadDataSourceName = "dataSourceName") {
-        var settings = $loadFixtureSettings();
-        var dataSourceName = get(arguments.overLoadDataSourceName);
-        if (settings.keyExists("unittest_database") && len(settings.unittest_database) && arguments.isUnitTest) {
+    public string function $getFixtureDataSourceName(boolean isUnitTest = true) {
+        var settings = $loadFixtureSettings(argumentCollection=arguments);
+        var dataSourceName = get("dataSourceName");
+        if (settings.keyExists("database") && len(settings.database)) {
+            dataSourceName = settings.database;
+        } else if (settings.keyExists("unittest_database") && len(settings.unittest_database) && arguments.isUnitTest) {
             dataSourceName = settings.unittest_database;
         }
         return dataSourceName;
     }
 
     public struct function $loadFixtureSettings() {
+        if (arguments.keyExists("settings")) {
+            return arguments.settings;
+        }
         var found = false;
         var loc = {};
         if (IsDefined("params") && params.keyExists("reload")) {

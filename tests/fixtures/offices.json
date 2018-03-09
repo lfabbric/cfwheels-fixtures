@@ -1,0 +1,285 @@
+[
+    {
+        "TABLE": "offices",
+        "RECORDS": [
+            {
+                "fields": {
+                    "POSTALCODE": 94080,
+                    "OFFICECODE": 1,
+                    "CITY": "San Francisco",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 650 219 4782",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "100 Market Street",
+                    "STATE": "CA",
+                    "ADDRESSLINE2": "Suite 300"
+                },
+                "pk": 1
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "02107",
+                    "OFFICECODE": 2,
+                    "CITY": "Boston",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 215 837 0825",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "1550 Court Place",
+                    "STATE": "MA",
+                    "ADDRESSLINE2": "Suite 102"
+                },
+                "pk": 2
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "OFFICECODE": 3,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "PHONE": "+1 212 555 3000",
+                    "TERRITORY": "NA",
+                    "ADDRESSLINE1": "523 East 53rd Street",
+                    "STATE": "NY",
+                    "ADDRESSLINE2": "apt. 5A"
+                },
+                "pk": 3
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 75017,
+                    "OFFICECODE": 4,
+                    "CITY": "Paris",
+                    "COUNTRY": "France",
+                    "PHONE": "+33 14 723 4404",
+                    "TERRITORY": "EMEA",
+                    "ADDRESSLINE1": "43 Rue Jouffroy D'abbans",
+                    "STATE": "",
+                    "ADDRESSLINE2": ""
+                },
+                "pk": 4
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "102-8578",
+                    "OFFICECODE": 5,
+                    "CITY": "Tokyo",
+                    "COUNTRY": "Japan",
+                    "PHONE": "+81 33 224 5000",
+                    "TERRITORY": "Japan",
+                    "ADDRESSLINE1": "4-1 Kioicho",
+                    "STATE": "Chiyoda-Ku",
+                    "ADDRESSLINE2": ""
+                },
+                "pk": 5
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "NSW 2010",
+                    "OFFICECODE": 6,
+                    "CITY": "Sydney",
+                    "COUNTRY": "Australia",
+                    "PHONE": "+61 2 9264 2451",
+                    "TERRITORY": "APAC",
+                    "ADDRESSLINE1": "5-11 Wentworth Avenue",
+                    "STATE": "",
+                    "ADDRESSLINE2": "Floor #2"
+                },
+                "pk": 6
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "EC2N 1HN",
+                    "OFFICECODE": 7,
+                    "CITY": "London",
+                    "COUNTRY": "UK",
+                    "PHONE": "+44 20 7877 2041",
+                    "TERRITORY": "EMEA",
+                    "ADDRESSLINE1": "25 Old Broad Street",
+                    "STATE": "",
+                    "ADDRESSLINE2": "Level 7"
+                },
+                "pk": 7
+            }
+        ],
+        "PRIMARYKEYS": "officeCode",
+        "CONSTRAINTS": {
+            "COLUMNS": [
+                "CONSTRAINT_NAME",
+                "IS_PRIMARY_KEY",
+                "IS_UNIQUE_CONSTRAINT",
+                "TYPE_DESC",
+                "NAME"
+            ],
+            "DATA": [
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "officeCode"
+                ],
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "officeCode"
+                ]
+            ]
+        },
+        "COLUMNS": {
+            "COLUMNS": [
+                "COLUMN_NAME",
+                "TYPE_NAME",
+                "COLUMN_SIZE",
+                "DECIMAL_DIGITS",
+                "IS_NULLABLE",
+                "REMARKS",
+                "COLUMN_DEFAULT_VALUE",
+                "CHAR_OCTET_LENGTH",
+                "ORDINAL_POSITION",
+                "IS_PRIMARYKEY",
+                "IS_FOREIGNKEY",
+                "REFERENCED_PRIMARYKEY",
+                "REFERENCED_PRIMARYKEY_TABLE"
+            ],
+            "DATA": [
+                [
+                    "officeCode",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    1,
+                    "YES",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "city",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    2,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "phone",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    3,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine1",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    4,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine2",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    5,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "state",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    6,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "country",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    7,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "postalCode",
+                    "VARCHAR",
+                    15,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    15,
+                    8,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "territory",
+                    "VARCHAR",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    10,
+                    9,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ]
+            ]
+        }
+    }
+]
