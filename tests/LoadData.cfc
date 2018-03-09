@@ -28,7 +28,6 @@ component extends="wheels.Test" {
             dbinfo.setTable("offices");
             assert("#dbinfo.columns().recordCount# gt 0");
         } catch (any e) {
-            writeDump(e);abort;
             assert(false);
         }
         try {
@@ -47,12 +46,12 @@ component extends="wheels.Test" {
     }
 
     function test_load_missing_fixture() {
-		try {
+        try {
             loadData(
-				fixtures = ["/plugins/fixtures/tests/fixtures/notfound.json"],
-				enablePopulateTables = false,
-				settings = variables.loc.settings
-			);
+                fixtures = ["/plugins/fixtures/tests/fixtures/notfound.json"],
+                enablePopulateTables = false,
+                settings = variables.loc.settings
+            );
         } catch (any e) {
             assert(true);
         }

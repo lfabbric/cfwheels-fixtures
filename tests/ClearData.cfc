@@ -52,7 +52,6 @@ component extends="wheels.Test" {
             dbinfo.setTable("offices");
             assert("#dbinfo.columns().recordCount# gt 0");
         } catch (any e) {
-            writeDump(e);abort;
             assert(false);
         }
         try {
