@@ -41,31 +41,8 @@ component extends="wheels.Test" {
         }
     }
 
-    function test_clear_mysql_table_with_relations() {
-        try {
-            loadData(fixtures = ["/plugins/fixtures/tests/fixtures/orders.json"], settings = variables.loc.settings);
-        } catch (any e) {}
-        // check if tables exists
-        var dbinfo  = new dbinfo(dataSource = loc.settings.unittest_database);
-        try {
-            dbinfo.setTable("employees");
-            assert("#dbinfo.columns().recordCount# gt 0");
-        } catch (any e) {
-            assert(false);
-        }
-        clearData(fixtures = ["/plugins/fixtures/tests/fixtures/orders.json"], settings = variables.loc.settings);
-        
-        var dbinfo  = new dbinfo(dataSource = loc.settings.unittest_database);
-        try {
-            dbinfo.setTable("employees");
-            assert(false);
-        } catch (any e) {
-            assert(true);
-        }
-    }
-
     function test_clear_mysql_tables_from_multiple_fixtures() {
-        // "/plugins/fixtures/tests/fixtures/offices.json", 
+        // this also tested associations...
         try {
             loadData(fixtures = ["/plugins/fixtures/tests/fixtures/offices.json", "/plugins/fixtures/tests/fixtures/customers.json", "/plugins/fixtures/tests/fixtures/employees.json"], settings = variables.loc.settings);
         } catch (any e) {}
