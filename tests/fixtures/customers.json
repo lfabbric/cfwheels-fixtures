@@ -1,0 +1,2436 @@
+[
+    {
+        "TABLE": "customers",
+        "RECORDS": [
+            {
+                "fields": {
+                    "POSTALCODE": 44000,
+                    "CONTACTLASTNAME": "Schmitt",
+                    "PHONE": "40.32.2555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 103,
+                    "CONTACTFIRSTNAME": "Carine ",
+                    "CREDITLIMIT": 21000.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Nantes",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "54, rue Royale",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Atelier graphique"
+                },
+                "pk": 103
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 83030,
+                    "CONTACTLASTNAME": "King",
+                    "PHONE": 7025551838,
+                    "STATE": "NV",
+                    "CUSTOMERNUMBER": 112,
+                    "CONTACTFIRSTNAME": "Jean",
+                    "CREDITLIMIT": 71800.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "Las Vegas",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "8489 Strong St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Signal Gift Stores"
+                },
+                "pk": 112
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 3004,
+                    "CONTACTLASTNAME": "Ferguson",
+                    "PHONE": "03 9520 4555",
+                    "STATE": "Victoria",
+                    "CUSTOMERNUMBER": 114,
+                    "CONTACTFIRSTNAME": "Peter",
+                    "CREDITLIMIT": 117300.00,
+                    "SALESREPEMPLOYEENUMBER": 1611,
+                    "CITY": "Melbourne",
+                    "COUNTRY": "Australia",
+                    "ADDRESSLINE1": "636 St Kilda Road",
+                    "ADDRESSLINE2": "Level 3",
+                    "CUSTOMERNAME": "Australian Collectors, Co."
+                },
+                "pk": 114
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 44000,
+                    "CONTACTLASTNAME": "Labrune",
+                    "PHONE": "40.67.8555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 119,
+                    "CONTACTFIRSTNAME": "Janine ",
+                    "CREDITLIMIT": 118200.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Nantes",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "67, rue des Cinquante Otages",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "La Rochelle Gifts"
+                },
+                "pk": 119
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 4110,
+                    "CONTACTLASTNAME": "Bergulfsen",
+                    "PHONE": "07-98 9555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 121,
+                    "CONTACTFIRSTNAME": "Jonas ",
+                    "CREDITLIMIT": 81700.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Stavern",
+                    "COUNTRY": "Norway",
+                    "ADDRESSLINE1": "Erling Skakkes gate 78",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Baane Mini Imports"
+                },
+                "pk": 121
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 97562,
+                    "CONTACTLASTNAME": "Nelson",
+                    "PHONE": 4155551450,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 124,
+                    "CONTACTFIRSTNAME": "Susan",
+                    "CREDITLIMIT": 210500.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "San Rafael",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "5677 Strong St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Gifts Distributors Ltd."
+                },
+                "pk": 124
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "01-012",
+                    "CONTACTLASTNAME": "Piestrzeniewicz",
+                    "PHONE": "(26) 642-7555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 125,
+                    "CONTACTFIRSTNAME": "Zbyszek ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Warszawa",
+                    "COUNTRY": "Poland",
+                    "ADDRESSLINE1": "ul. Filtrowa 68",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Havel & Zbyszek Co"
+                },
+                "pk": 125
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 60528,
+                    "CONTACTLASTNAME": "Keitel",
+                    "PHONE": "+49 69 66 90 2555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 128,
+                    "CONTACTFIRSTNAME": "Roland",
+                    "CREDITLIMIT": 59700.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Frankfurt",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Lyonerstr. 34",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Blauer See Auto, Co."
+                },
+                "pk": 128
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94217,
+                    "CONTACTLASTNAME": "Murphy",
+                    "PHONE": 6505555787,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 129,
+                    "CONTACTFIRSTNAME": "Julie",
+                    "CREDITLIMIT": 64600.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "San Francisco",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "5557 North Pendale Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Wheels Co."
+                },
+                "pk": 129
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "CONTACTLASTNAME": "Lee",
+                    "PHONE": 2125557818,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 131,
+                    "CONTACTFIRSTNAME": "Kwai",
+                    "CREDITLIMIT": 114900.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "897 Long Airport Avenue",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Land of Toys Inc."
+                },
+                "pk": 131
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 28034,
+                    "CONTACTLASTNAME": "Freyre",
+                    "PHONE": "(91) 555 94 44",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 141,
+                    "CONTACTFIRSTNAME": "Diego ",
+                    "CREDITLIMIT": 227600.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Madrid",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "C/ Moralzarzal, 86",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Euro+ Shopping Channel"
+                },
+                "pk": 141
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "S-958 22",
+                    "CONTACTLASTNAME": "Berglund",
+                    "PHONE": "0921-12 3555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 144,
+                    "CONTACTFIRSTNAME": "Christina ",
+                    "CREDITLIMIT": 53100.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Luleå",
+                    "COUNTRY": "Sweden",
+                    "ADDRESSLINE1": "Berguvsvägen  8",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Volvo Model Replicas, Co"
+                },
+                "pk": 144
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 1734,
+                    "CONTACTLASTNAME": "Petersen",
+                    "PHONE": "31 12 3555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 145,
+                    "CONTACTFIRSTNAME": "Jytte ",
+                    "CREDITLIMIT": 83400.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Kobenhavn",
+                    "COUNTRY": "Denmark",
+                    "ADDRESSLINE1": "Vinbæltet 34",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Danish Wholesale Imports"
+                },
+                "pk": 145
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 69004,
+                    "CONTACTLASTNAME": "Saveley",
+                    "PHONE": "78.32.5555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 146,
+                    "CONTACTFIRSTNAME": "Mary ",
+                    "CREDITLIMIT": 123900.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Lyon",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "2, rue du Commerce",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Saveley & Henriot, Co."
+                },
+                "pk": 146
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "079903",
+                    "CONTACTLASTNAME": "Natividad",
+                    "PHONE": "+65 221 7555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 148,
+                    "CONTACTFIRSTNAME": "Eric",
+                    "CREDITLIMIT": 103800.00,
+                    "SALESREPEMPLOYEENUMBER": 1621,
+                    "CITY": "Singapore",
+                    "COUNTRY": "Singapore",
+                    "ADDRESSLINE1": "Bronz Sok.",
+                    "ADDRESSLINE2": "Bronz Apt. 3/6 Tesvikiye",
+                    "CUSTOMERNAME": "Dragon Souveniers, Ltd."
+                },
+                "pk": 148
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "CONTACTLASTNAME": "Young",
+                    "PHONE": 2125557413,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 151,
+                    "CONTACTFIRSTNAME": "Jeff",
+                    "CREDITLIMIT": 138500.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "4092 Furth Circle",
+                    "ADDRESSLINE2": "Suite 400",
+                    "CUSTOMERNAME": "Muscle Machine Inc"
+                },
+                "pk": 151
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 70267,
+                    "CONTACTLASTNAME": "Leong",
+                    "PHONE": 2155551555,
+                    "STATE": "PA",
+                    "CUSTOMERNUMBER": 157,
+                    "CONTACTFIRSTNAME": "Kelvin",
+                    "CREDITLIMIT": 100600.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "Allentown",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "7586 Pompton St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Diecast Classics Inc."
+                },
+                "pk": 157
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94217,
+                    "CONTACTLASTNAME": "Hashimoto",
+                    "PHONE": 6505556809,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 161,
+                    "CONTACTFIRSTNAME": "Juri",
+                    "CREDITLIMIT": 84600.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "Burlingame",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "9408 Furth Circle",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Technics Stores Inc."
+                },
+                "pk": 161
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "069045",
+                    "CONTACTLASTNAME": "Victorino",
+                    "PHONE": "+65 224 1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 166,
+                    "CONTACTFIRSTNAME": "Wendy",
+                    "CREDITLIMIT": 97900.00,
+                    "SALESREPEMPLOYEENUMBER": 1612,
+                    "CITY": "Singapore",
+                    "COUNTRY": "Singapore",
+                    "ADDRESSLINE1": "106 Linden Road Sandown",
+                    "ADDRESSLINE2": "2nd Floor",
+                    "CUSTOMERNAME": "Handji Gifts& Co"
+                },
+                "pk": 166
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "N 5804",
+                    "CONTACTLASTNAME": "Oeztan",
+                    "PHONE": "+47 2267 3215",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 167,
+                    "CONTACTFIRSTNAME": "Veysel",
+                    "CREDITLIMIT": 96800.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Bergen",
+                    "COUNTRY": "Norway  ",
+                    "ADDRESSLINE1": "Brehmen St. 121",
+                    "ADDRESSLINE2": "PR 334 Sentrum",
+                    "CUSTOMERNAME": "Herkku Gifts"
+                },
+                "pk": 167
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 97823,
+                    "CONTACTLASTNAME": "Franco",
+                    "PHONE": 2035557845,
+                    "STATE": "CT",
+                    "CUSTOMERNUMBER": 168,
+                    "CONTACTFIRSTNAME": "Keith",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "New Haven",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "149 Spinnaker Dr.",
+                    "ADDRESSLINE2": "Suite 101",
+                    "CUSTOMERNAME": "American Souvenirs Inc"
+                },
+                "pk": 168
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 1756,
+                    "CONTACTLASTNAME": "de Castro",
+                    "PHONE": "(1) 356-5555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 169,
+                    "CONTACTFIRSTNAME": "Isabel ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Lisboa",
+                    "COUNTRY": "Portugal",
+                    "ADDRESSLINE1": "Estrada da saúde n. 58",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Porto Imports Co."
+                },
+                "pk": 169
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 59000,
+                    "CONTACTLASTNAME": "Rancé",
+                    "PHONE": "20.16.1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 171,
+                    "CONTACTFIRSTNAME": "Martine ",
+                    "CREDITLIMIT": 82900.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Lille",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "184, chaussée de Tournai",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Daedalus Designs Imports"
+                },
+                "pk": 171
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 75012,
+                    "CONTACTLASTNAME": "Bertrand",
+                    "PHONE": "(1) 42.34.2555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 172,
+                    "CONTACTFIRSTNAME": "Marie",
+                    "CREDITLIMIT": 84300.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Paris",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "265, boulevard Charonne",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "La Corne D'abondance, Co."
+                },
+                "pk": 172
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 51247,
+                    "CONTACTLASTNAME": "Tseng",
+                    "PHONE": 6175555555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 173,
+                    "CONTACTFIRSTNAME": "Jerry",
+                    "CREDITLIMIT": 43400.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "Cambridge",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "4658 Baden Av.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Cambridge Collectables Co."
+                },
+                "pk": 173
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 97562,
+                    "CONTACTLASTNAME": "King",
+                    "PHONE": 2035552570,
+                    "STATE": "CT",
+                    "CUSTOMERNUMBER": 175,
+                    "CONTACTFIRSTNAME": "Julie",
+                    "CREDITLIMIT": 84300.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Bridgewater",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "25593 South Bay Ln.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Gift Depot Inc."
+                },
+                "pk": 175
+            },
+            {
+                "fields": {
+                    "POSTALCODE": " 530-0003",
+                    "CONTACTLASTNAME": "Kentary",
+                    "PHONE": "+81 06 6342 5555",
+                    "STATE": "Osaka",
+                    "CUSTOMERNUMBER": 177,
+                    "CONTACTFIRSTNAME": "Mory",
+                    "CREDITLIMIT": 81200.00,
+                    "SALESREPEMPLOYEENUMBER": 1621,
+                    "CITY": "Kita-ku",
+                    "COUNTRY": "Japan",
+                    "ADDRESSLINE1": "1-6-20 Dojima",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Osaka Souveniers Co."
+                },
+                "pk": 177
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "CONTACTLASTNAME": "Frick",
+                    "PHONE": 2125551500,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 181,
+                    "CONTACTFIRSTNAME": "Michael",
+                    "CREDITLIMIT": 76400.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "2678 Kingston Rd.",
+                    "ADDRESSLINE2": "Suite 101",
+                    "CUSTOMERNAME": "Vitachrome Inc."
+                },
+                "pk": 181
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 21240,
+                    "CONTACTLASTNAME": "Karttunen",
+                    "PHONE": "90-224 8555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 186,
+                    "CONTACTFIRSTNAME": "Matti",
+                    "CREDITLIMIT": 96500.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Helsinki",
+                    "COUNTRY": "Finland",
+                    "ADDRESSLINE1": "Keskuskatu 45",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Toys of Finland, Co."
+                },
+                "pk": 186
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "EC2 5NT",
+                    "CONTACTLASTNAME": "Ashworth",
+                    "PHONE": "(171) 555-1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 187,
+                    "CONTACTFIRSTNAME": "Rachel",
+                    "CREDITLIMIT": 136800.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Manchester",
+                    "COUNTRY": "UK",
+                    "ADDRESSLINE1": "Fauntleroy Circus",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "AV Stores, Co."
+                },
+                "pk": 187
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 2,
+                    "CONTACTLASTNAME": "Cassidy",
+                    "PHONE": "+353 1862 1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 189,
+                    "CONTACTFIRSTNAME": "Dean",
+                    "CREDITLIMIT": 69400.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Dublin",
+                    "COUNTRY": "Ireland",
+                    "ADDRESSLINE1": "25 Maiden Lane",
+                    "ADDRESSLINE2": "Floor No. 4",
+                    "CUSTOMERNAME": "Clover Collections, Co."
+                },
+                "pk": 189
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 58339,
+                    "CONTACTLASTNAME": "Taylor",
+                    "PHONE": 6175558428,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 198,
+                    "CONTACTFIRSTNAME": "Leslie",
+                    "CREDITLIMIT": 23000.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "Brickhaven",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "16780 Pompton St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Auto-Moto Classics Inc."
+                },
+                "pk": 198
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "WX1 6LT",
+                    "CONTACTLASTNAME": "Devon",
+                    "PHONE": "(171) 555-2282",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 201,
+                    "CONTACTFIRSTNAME": "Elizabeth",
+                    "CREDITLIMIT": 92700.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Liverpool",
+                    "COUNTRY": "UK",
+                    "ADDRESSLINE1": "12, Berkeley Gardens Blvd",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "UK Collectables, Ltd."
+                },
+                "pk": 201
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "V3F 2K1",
+                    "CONTACTLASTNAME": "Tamuri",
+                    "PHONE": "(604) 555-3392",
+                    "STATE": "BC",
+                    "CUSTOMERNUMBER": 202,
+                    "CONTACTFIRSTNAME": "Yoshi ",
+                    "CREDITLIMIT": 90300.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Vancouver",
+                    "COUNTRY": "Canada",
+                    "ADDRESSLINE1": "1900 Oak St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Canadian Gift Exchange Network"
+                },
+                "pk": 202
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 58339,
+                    "CONTACTLASTNAME": "Barajas",
+                    "PHONE": 6175557555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 204,
+                    "CONTACTFIRSTNAME": "Miguel",
+                    "CREDITLIMIT": 68700.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "Brickhaven",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "7635 Spinnaker Dr.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Online Mini Collectables"
+                },
+                "pk": 204
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 90003,
+                    "CONTACTLASTNAME": "Young",
+                    "PHONE": 6265557265,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 205,
+                    "CONTACTFIRSTNAME": "Julie",
+                    "CREDITLIMIT": 90700.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "Pasadena",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "78934 Hillside Dr.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Toys4GrownUps.com"
+                },
+                "pk": 205
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "038988",
+                    "CONTACTLASTNAME": "Walker",
+                    "PHONE": "+612 9411 1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 206,
+                    "CONTACTFIRSTNAME": "Brydey",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Singapore",
+                    "COUNTRY": "Singapore",
+                    "ADDRESSLINE1": "Suntec Tower Three",
+                    "ADDRESSLINE2": "8 Temasek",
+                    "CUSTOMERNAME": "Asian Shopping Network, Co"
+                },
+                "pk": 206
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 67000,
+                    "CONTACTLASTNAME": "Citeaux",
+                    "PHONE": "88.60.1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 209,
+                    "CONTACTFIRSTNAME": "Frédérique ",
+                    "CREDITLIMIT": 53800.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Strasbourg",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "24, place Kléber",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Caravy"
+                },
+                "pk": 209
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "Gao",
+                    "PHONE": "+852 2251 1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 211,
+                    "CONTACTFIRSTNAME": "Mike",
+                    "CREDITLIMIT": 58600.00,
+                    "SALESREPEMPLOYEENUMBER": 1621,
+                    "CITY": "Central Hong Kong",
+                    "COUNTRY": "Hong Kong",
+                    "ADDRESSLINE1": "Bank of China Tower",
+                    "ADDRESSLINE2": "1 Garden Road",
+                    "CUSTOMERNAME": "King Kong Collectables, Co."
+                },
+                "pk": 211
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "08022",
+                    "CONTACTLASTNAME": "Saavedra",
+                    "PHONE": "(93) 203 4555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 216,
+                    "CONTACTFIRSTNAME": "Eduardo ",
+                    "CREDITLIMIT": 60300.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Barcelona",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "Rambla de Cataluña, 23",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Enaco Distributors"
+                },
+                "pk": 216
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 92561,
+                    "CONTACTLASTNAME": "Young",
+                    "PHONE": 3105552373,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 219,
+                    "CONTACTFIRSTNAME": "Mary",
+                    "CREDITLIMIT": 11000.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "Glendale",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "4097 Douglas Av.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Boards & Toys Co."
+                },
+                "pk": 219
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "01307",
+                    "CONTACTLASTNAME": "Kloss",
+                    "PHONE": "0372-555188",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 223,
+                    "CONTACTFIRSTNAME": "Horst ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Cunewalde",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Taucherstraße 10",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Natürlich Autos"
+                },
+                "pk": 223
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 8200,
+                    "CONTACTLASTNAME": "Ibsen",
+                    "PHONE": "86 21 3555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 227,
+                    "CONTACTFIRSTNAME": "Palle",
+                    "CREDITLIMIT": 120800.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Århus",
+                    "COUNTRY": "Denmark",
+                    "ADDRESSLINE1": "Smagsloget 45",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Heintze Collectables"
+                },
+                "pk": 227
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "H1J 1C3",
+                    "CONTACTLASTNAME": "Fresnière",
+                    "PHONE": "(514) 555-8054",
+                    "STATE": "Québec",
+                    "CUSTOMERNUMBER": 233,
+                    "CONTACTFIRSTNAME": "Jean ",
+                    "CREDITLIMIT": 48700.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "Montréal",
+                    "COUNTRY": "Canada",
+                    "ADDRESSLINE1": "43 rue St. Laurent",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Québec Home Shopping Network"
+                },
+                "pk": 233
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 28001,
+                    "CONTACTLASTNAME": "Camino",
+                    "PHONE": "(91) 745 6555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 237,
+                    "CONTACTFIRSTNAME": "Alejandra ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Madrid",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "Gran Vía, 1",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "ANG Resellers"
+                },
+                "pk": 237
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 91217,
+                    "CONTACTLASTNAME": "Thompson",
+                    "PHONE": 7605558146,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 239,
+                    "CONTACTFIRSTNAME": "Valarie",
+                    "CREDITLIMIT": 105000.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "San Diego",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "361 Furth Circle",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Collectable Mini Designs Co."
+                },
+                "pk": 239
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "PO31 7PJ",
+                    "CONTACTLASTNAME": "Bennett",
+                    "PHONE": "(198) 555-8888",
+                    "STATE": "Isle of Wight",
+                    "CUSTOMERNUMBER": 240,
+                    "CONTACTFIRSTNAME": "Helen ",
+                    "CREDITLIMIT": 93900.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Cowes",
+                    "COUNTRY": "UK",
+                    "ADDRESSLINE1": "Garden House",
+                    "ADDRESSLINE2": "Crowther Way 23",
+                    "CUSTOMERNAME": "giftsbymail.co.uk"
+                },
+                "pk": 240
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 31000,
+                    "CONTACTLASTNAME": "Roulet",
+                    "PHONE": "61.77.6555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 242,
+                    "CONTACTFIRSTNAME": "Annette ",
+                    "CREDITLIMIT": 61100.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Toulouse",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "1 rue Alsace-Lorraine",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Alpha Cognac"
+                },
+                "pk": 242
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 60528,
+                    "CONTACTLASTNAME": "Messner",
+                    "PHONE": "069-0555984",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 247,
+                    "CONTACTFIRSTNAME": "Renate ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Frankfurt",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Magazinweg 7",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Messner Shopping Network"
+                },
+                "pk": 247
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10100,
+                    "CONTACTLASTNAME": "Accorti",
+                    "PHONE": "011-4988555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 249,
+                    "CONTACTFIRSTNAME": "Paolo ",
+                    "CREDITLIMIT": 113000.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Torino",
+                    "COUNTRY": "Italy",
+                    "ADDRESSLINE1": "Via Monte Bianco 34",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Amica Models & Co."
+                },
+                "pk": 249
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 75508,
+                    "CONTACTLASTNAME": "Da Silva",
+                    "PHONE": "+33 1 46 62 7555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 250,
+                    "CONTACTFIRSTNAME": "Daniel",
+                    "CREDITLIMIT": 68100.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Paris",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "27 rue du Colonel Pierre Avia",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Lyon Souveniers"
+                },
+                "pk": 250
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 78000,
+                    "CONTACTLASTNAME": "Tonini",
+                    "PHONE": "30.59.8555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 256,
+                    "CONTACTFIRSTNAME": "Daniel ",
+                    "CREDITLIMIT": 77900.00,
+                    "SALESREPEMPLOYEENUMBER": 1370,
+                    "CITY": "Versailles",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "67, avenue de l'Europe",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Auto Associés & Cie."
+                },
+                "pk": 256
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 50739,
+                    "CONTACTLASTNAME": "Pfalzheim",
+                    "PHONE": "0221-5554327",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 259,
+                    "CONTACTFIRSTNAME": "Henriette ",
+                    "CREDITLIMIT": 120400.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Köln",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Mehrheimerstr. 369",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Toms Spezialitäten, Ltd"
+                },
+                "pk": 259
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "T2F 8M4",
+                    "CONTACTLASTNAME": "Lincoln",
+                    "PHONE": "(604) 555-4555",
+                    "STATE": "BC",
+                    "CUSTOMERNUMBER": 260,
+                    "CONTACTFIRSTNAME": "Elizabeth ",
+                    "CREDITLIMIT": 89600.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Tsawassen",
+                    "COUNTRY": "Canada",
+                    "ADDRESSLINE1": "23 Tsawassen Blvd.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Royal Canadian Collectables, Ltd."
+                },
+                "pk": 260
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 80805,
+                    "CONTACTLASTNAME": "Franken",
+                    "PHONE": "089-0877555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 273,
+                    "CONTACTFIRSTNAME": "Peter ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "München",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Berliner Platz 43",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Franken Gifts, Co"
+                },
+                "pk": 273
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 2060,
+                    "CONTACTLASTNAME": "O'Hara",
+                    "PHONE": "02 9936 8555",
+                    "STATE": "NSW",
+                    "CUSTOMERNUMBER": 276,
+                    "CONTACTFIRSTNAME": "Anna",
+                    "CREDITLIMIT": 107800.00,
+                    "SALESREPEMPLOYEENUMBER": 1611,
+                    "CITY": "North Sydney",
+                    "COUNTRY": "Australia",
+                    "ADDRESSLINE1": "201 Miller Street",
+                    "ADDRESSLINE2": "Level 15",
+                    "CUSTOMERNAME": "Anna's Decorations, Ltd"
+                },
+                "pk": 276
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 24100,
+                    "CONTACTLASTNAME": "Rovelli",
+                    "PHONE": "035-640555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 278,
+                    "CONTACTFIRSTNAME": "Giovanni ",
+                    "CREDITLIMIT": 119600.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Bergamo",
+                    "COUNTRY": "Italy",
+                    "ADDRESSLINE1": "Via Ludovico il Moro 22",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Rovelli Gifts"
+                },
+                "pk": 278
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 2067,
+                    "CONTACTLASTNAME": "Huxley",
+                    "PHONE": "+61 2 9495 8555",
+                    "STATE": "NSW",
+                    "CUSTOMERNUMBER": 282,
+                    "CONTACTFIRSTNAME": "Adrian",
+                    "CREDITLIMIT": 93300.00,
+                    "SALESREPEMPLOYEENUMBER": 1611,
+                    "CITY": "Chatswood",
+                    "COUNTRY": "Australia",
+                    "ADDRESSLINE1": "Monitor Money Building",
+                    "ADDRESSLINE2": "815 Pacific Hwy",
+                    "CUSTOMERNAME": "Souveniers And Things Co."
+                },
+                "pk": 282
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 51247,
+                    "CONTACTLASTNAME": "Hernandez",
+                    "PHONE": 6175558555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 286,
+                    "CONTACTFIRSTNAME": "Marta",
+                    "CREDITLIMIT": 123700.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "Cambridge",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "39323 Spinnaker Dr.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Marta's Replicas Co."
+                },
+                "pk": 286
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 1700,
+                    "CONTACTLASTNAME": "Harrison",
+                    "PHONE": "+41 26 425 50 01",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 293,
+                    "CONTACTFIRSTNAME": "Ed",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Fribourg",
+                    "COUNTRY": "Switzerland",
+                    "ADDRESSLINE1": "Rte des Arsenaux 41 ",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "BG&E Collectables"
+                },
+                "pk": 293
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 1203,
+                    "CONTACTLASTNAME": "Holz",
+                    "PHONE": "0897-034555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 298,
+                    "CONTACTFIRSTNAME": "Mihael",
+                    "CREDITLIMIT": 141300.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Genève",
+                    "COUNTRY": "Switzerland",
+                    "ADDRESSLINE1": "Grenzacherweg 237",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Vida Sport, Ltd"
+                },
+                "pk": 298
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "N 0106",
+                    "CONTACTLASTNAME": "Klaeboe",
+                    "PHONE": "+47 2212 1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 299,
+                    "CONTACTFIRSTNAME": "Jan",
+                    "CREDITLIMIT": 95100.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Oslo",
+                    "COUNTRY": "Norway  ",
+                    "ADDRESSLINE1": "Drammensveien 126A",
+                    "ADDRESSLINE2": "PB 211 Sentrum",
+                    "CUSTOMERNAME": "Norway Gifts By Mail, Co."
+                },
+                "pk": 299
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "1043 GR",
+                    "CONTACTLASTNAME": "Schuyler",
+                    "PHONE": "+31 20 491 9555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 303,
+                    "CONTACTFIRSTNAME": "Bradley",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Amsterdam",
+                    "COUNTRY": "Netherlands",
+                    "ADDRESSLINE1": "Kingsfordweg 151",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Schuyler Imports"
+                },
+                "pk": 303
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 12209,
+                    "CONTACTLASTNAME": "Andersen",
+                    "PHONE": "030-0074555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 307,
+                    "CONTACTFIRSTNAME": "Mel",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Berlin",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Obere Str. 57",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Der Hund Imports"
+                },
+                "pk": 307
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 90110,
+                    "CONTACTLASTNAME": "Koskitalo",
+                    "PHONE": "981-443655",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 311,
+                    "CONTACTFIRSTNAME": "Pirkko",
+                    "CREDITLIMIT": 90500.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Oulu",
+                    "COUNTRY": "Finland",
+                    "ADDRESSLINE1": "Torikatu 38",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Oulu Toy Supplies, Inc."
+                },
+                "pk": 311
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "B-1180",
+                    "CONTACTLASTNAME": "Dewey",
+                    "PHONE": "(02) 5554 67",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 314,
+                    "CONTACTFIRSTNAME": "Catherine ",
+                    "CREDITLIMIT": 79900.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Bruxelles",
+                    "COUNTRY": "Belgium",
+                    "ADDRESSLINE1": "Rue Joseph-Bens 532",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Petit Auto"
+                },
+                "pk": 314
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 24067,
+                    "CONTACTLASTNAME": "Frick",
+                    "PHONE": 9145554562,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 319,
+                    "CONTACTFIRSTNAME": "Steve",
+                    "CREDITLIMIT": 102700.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "White Plains",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "3758 North Pendale Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Classics"
+                },
+                "pk": 319
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 50553,
+                    "CONTACTLASTNAME": "Huang",
+                    "PHONE": 5085559555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 320,
+                    "CONTACTFIRSTNAME": "Wing",
+                    "CREDITLIMIT": 94500.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "New Bedford",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "4575 Hillside Dr.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Creations Ltd."
+                },
+                "pk": 320
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94217,
+                    "CONTACTLASTNAME": "Brown",
+                    "PHONE": 6505551386,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 321,
+                    "CONTACTFIRSTNAME": "Julie",
+                    "CREDITLIMIT": 105000.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "San Francisco",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "7734 Strong St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Corporate Gift Ideas Co."
+                },
+                "pk": 321
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "Graham",
+                    "PHONE": "+64 9 312 5555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 323,
+                    "CONTACTFIRSTNAME": "Mike",
+                    "CREDITLIMIT": 88000.00,
+                    "SALESREPEMPLOYEENUMBER": 1612,
+                    "CITY": "Auckland  ",
+                    "COUNTRY": "New Zealand",
+                    "ADDRESSLINE1": "162-164 Grafton Road",
+                    "ADDRESSLINE2": "Level 2",
+                    "CUSTOMERNAME": "Down Under Souveniers, Inc"
+                },
+                "pk": 323
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "WX3 6FW",
+                    "CONTACTLASTNAME": "Brown",
+                    "PHONE": "(171) 555-0297",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 324,
+                    "CONTACTFIRSTNAME": "Ann ",
+                    "CREDITLIMIT": 77000.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "London",
+                    "COUNTRY": "UK",
+                    "ADDRESSLINE1": "35 King George",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Stylish Desk Decors, Co."
+                },
+                "pk": 324
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94019,
+                    "CONTACTLASTNAME": "Brown",
+                    "PHONE": 2015559350,
+                    "STATE": "NJ",
+                    "CUSTOMERNUMBER": 328,
+                    "CONTACTFIRSTNAME": "William",
+                    "CREDITLIMIT": 43000.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Newark",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "7476 Moss Rd.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Tekni Collectables Inc."
+                },
+                "pk": 328
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 4101,
+                    "CONTACTLASTNAME": "Calaghan",
+                    "PHONE": "61-7-3844-6555",
+                    "STATE": "Queensland",
+                    "CUSTOMERNUMBER": 333,
+                    "CONTACTFIRSTNAME": "Ben",
+                    "CREDITLIMIT": 51600.00,
+                    "SALESREPEMPLOYEENUMBER": 1611,
+                    "CITY": "South Brisbane",
+                    "COUNTRY": "Australia",
+                    "ADDRESSLINE1": "31 Duncan St. West End",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Australian Gift Network, Co"
+                },
+                "pk": 333
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "FIN-02271",
+                    "CONTACTLASTNAME": "Suominen",
+                    "PHONE": "+358 9 8045 555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 334,
+                    "CONTACTFIRSTNAME": "Kalle",
+                    "CREDITLIMIT": 98800.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "Espoo",
+                    "COUNTRY": "Finland",
+                    "ADDRESSLINE1": "Software Engineering Center",
+                    "ADDRESSLINE2": "SEC Oy",
+                    "CUSTOMERNAME": "Suominen Souveniers"
+                },
+                "pk": 334
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 14776,
+                    "CONTACTLASTNAME": "Cramer",
+                    "PHONE": "0555-09555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 335,
+                    "CONTACTFIRSTNAME": "Philip ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Brandenburg",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Maubelstr. 90",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Cramer Spezialitäten, Ltd"
+                },
+                "pk": 335
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 71270,
+                    "CONTACTLASTNAME": "Cervantes",
+                    "PHONE": 2155554695,
+                    "STATE": "PA",
+                    "CUSTOMERNUMBER": 339,
+                    "CONTACTFIRSTNAME": "Francisca",
+                    "CREDITLIMIT": 81100.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "Philadelphia",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "782 First Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Classic Gift Ideas, Inc"
+                },
+                "pk": 339
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 28023,
+                    "CONTACTLASTNAME": "Fernandez",
+                    "PHONE": "+34 913 728 555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 344,
+                    "CONTACTFIRSTNAME": "Jesus",
+                    "CREDITLIMIT": 59600.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Madrid",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "Merchants House",
+                    "ADDRESSLINE2": "27-30 Merchant's Quay",
+                    "CUSTOMERNAME": "CAF Imports"
+                },
+                "pk": 344
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 91003,
+                    "CONTACTLASTNAME": "Chandler",
+                    "PHONE": 2155554369,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 347,
+                    "CONTACTFIRSTNAME": "Brian",
+                    "CREDITLIMIT": 57700.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "Los Angeles",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "6047 Douglas Av.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Men 'R' US Retailers, Ltd."
+                },
+                "pk": 347
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "McKenna",
+                    "PHONE": "2967 555",
+                    "STATE": "Co. Cork",
+                    "CUSTOMERNUMBER": 348,
+                    "CONTACTFIRSTNAME": "Patricia ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Cork",
+                    "COUNTRY": "Ireland",
+                    "ADDRESSLINE1": "8 Johnstown Road",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Asian Treasures, Inc."
+                },
+                "pk": 348
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 13008,
+                    "CONTACTLASTNAME": "Lebihan",
+                    "PHONE": "91.24.4555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 350,
+                    "CONTACTFIRSTNAME": "Laurence ",
+                    "CREDITLIMIT": 65000.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Marseille",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "12, rue des Bouchers",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Marseille Mini Autos"
+                },
+                "pk": 350
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 51100,
+                    "CONTACTLASTNAME": "Henriot",
+                    "PHONE": "26.47.1555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 353,
+                    "CONTACTFIRSTNAME": "Paul ",
+                    "CREDITLIMIT": 81100.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Reims",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "59 rue de l'Abbaye",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Reims Collectables"
+                },
+                "pk": 353
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "0028",
+                    "CONTACTLASTNAME": "Kuger",
+                    "PHONE": "+27 21 550 3555",
+                    "STATE": "Pretoria",
+                    "CUSTOMERNUMBER": 356,
+                    "CONTACTFIRSTNAME": "Armand",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Hatfield",
+                    "COUNTRY": "South Africa",
+                    "ADDRESSLINE1": "1250 Pretorius Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "SAR Distributors, Co"
+                },
+                "pk": 356
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "MacKinlay",
+                    "PHONE": "64-9-3763555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 357,
+                    "CONTACTFIRSTNAME": "Wales",
+                    "CREDITLIMIT": 77700.00,
+                    "SALESREPEMPLOYEENUMBER": 1612,
+                    "CITY": "Auckland",
+                    "COUNTRY": "New Zealand",
+                    "ADDRESSLINE1": "199 Great North Road",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "GiftsForHim.com"
+                },
+                "pk": 357
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 44087,
+                    "CONTACTLASTNAME": "Josephs",
+                    "PHONE": "0251-555259",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 361,
+                    "CONTACTFIRSTNAME": "Karin",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Münster",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Luisenstr. 48",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Kommission Auto"
+                },
+                "pk": 361
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 51003,
+                    "CONTACTLASTNAME": "Yoshido",
+                    "PHONE": 6175559555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 362,
+                    "CONTACTFIRSTNAME": "Juri",
+                    "CREDITLIMIT": 41900.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "Boston",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "8616 Spinnaker Dr.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Gifts4AllAges.com"
+                },
+                "pk": 362
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 62005,
+                    "CONTACTLASTNAME": "Young",
+                    "PHONE": 6035558647,
+                    "STATE": "NH",
+                    "CUSTOMERNUMBER": 363,
+                    "CONTACTFIRSTNAME": "Dorothy",
+                    "CREDITLIMIT": 114200.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "Nashua",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "2304 Long Airport Avenue",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Online Diecast Creations Co."
+                },
+                "pk": 363
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 1675,
+                    "CONTACTLASTNAME": "Rodriguez",
+                    "PHONE": "(1) 354-2555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 369,
+                    "CONTACTFIRSTNAME": "Lino ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Lisboa",
+                    "COUNTRY": "Portugal",
+                    "ADDRESSLINE1": "Jardim das rosas n. 32",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Lisboa Souveniers, Inc"
+                },
+                "pk": 369
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 3012,
+                    "CONTACTLASTNAME": "Urs",
+                    "PHONE": "0452-076555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 376,
+                    "CONTACTFIRSTNAME": "Braun",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Bern",
+                    "COUNTRY": "Switzerland",
+                    "ADDRESSLINE1": "Hauptstr. 29",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Precious Collectables"
+                },
+                "pk": 376
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 58339,
+                    "CONTACTLASTNAME": "Nelson",
+                    "PHONE": 6175558555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 379,
+                    "CONTACTFIRSTNAME": "Allen",
+                    "CREDITLIMIT": 70700.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "Brickhaven",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "7825 Douglas Av.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Collectables For Less Inc."
+                },
+                "pk": 379
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "B-6000",
+                    "CONTACTLASTNAME": "Cartrain",
+                    "PHONE": "(071) 23 67 2555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 381,
+                    "CONTACTFIRSTNAME": "Pascale ",
+                    "CREDITLIMIT": 23500.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Charleroi",
+                    "COUNTRY": "Belgium",
+                    "ADDRESSLINE1": "Boulevard Tirou, 255",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Royale Belge"
+                },
+                "pk": 381
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 5020,
+                    "CONTACTLASTNAME": "Pipps",
+                    "PHONE": "6562-9555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 382,
+                    "CONTACTFIRSTNAME": "Georg ",
+                    "CREDITLIMIT": 71700.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Salzburg",
+                    "COUNTRY": "Austria",
+                    "ADDRESSLINE1": "Geislweg 14",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Salzburg Collectables"
+                },
+                "pk": 382
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "1227 MM",
+                    "CONTACTLASTNAME": "Cruz",
+                    "PHONE": "+63 2 555 3587",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 385,
+                    "CONTACTFIRSTNAME": "Arnold",
+                    "CREDITLIMIT": 81500.00,
+                    "SALESREPEMPLOYEENUMBER": 1621,
+                    "CITY": "Makati City",
+                    "COUNTRY": "Philippines",
+                    "ADDRESSLINE1": "15 McCallum Street",
+                    "ADDRESSLINE2": "NatWest Center #13-03",
+                    "CUSTOMERNAME": "Cruz & Sons Co."
+                },
+                "pk": 385
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 42100,
+                    "CONTACTLASTNAME": "Moroni",
+                    "PHONE": "0522-556555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 386,
+                    "CONTACTFIRSTNAME": "Maurizio ",
+                    "CREDITLIMIT": 121400.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Reggio Emilia",
+                    "COUNTRY": "Italy",
+                    "ADDRESSLINE1": "Strada Provinciale 124",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "L'ordine Souveniers"
+                },
+                "pk": 386
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "106-0032",
+                    "CONTACTLASTNAME": "Shimamura",
+                    "PHONE": "+81 3 3584 0555",
+                    "STATE": "Tokyo",
+                    "CUSTOMERNUMBER": 398,
+                    "CONTACTFIRSTNAME": "Akiko",
+                    "CREDITLIMIT": 94400.00,
+                    "SALESREPEMPLOYEENUMBER": 1621,
+                    "CITY": "Minato-ku",
+                    "COUNTRY": "Japan",
+                    "ADDRESSLINE1": "2-2-8 Roppongi",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Tokyo Collectables, Ltd"
+                },
+                "pk": 398
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 75016,
+                    "CONTACTLASTNAME": "Perrier",
+                    "PHONE": "(1) 47.55.6555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 406,
+                    "CONTACTFIRSTNAME": "Dominique",
+                    "CREDITLIMIT": 95000.00,
+                    "SALESREPEMPLOYEENUMBER": 1337,
+                    "CITY": "Paris",
+                    "COUNTRY": "France",
+                    "ADDRESSLINE1": "25, rue Lauriston",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Auto Canal+ Petit"
+                },
+                "pk": 406
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 70563,
+                    "CONTACTLASTNAME": "Müller",
+                    "PHONE": "0711-555361",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 409,
+                    "CONTACTFIRSTNAME": "Rita ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Stuttgart",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Adenauerallee 900",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Stuttgart Collectable Exchange"
+                },
+                "pk": 409
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "McRoy",
+                    "PHONE": "04 499 9555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 412,
+                    "CONTACTFIRSTNAME": "Sarah",
+                    "CREDITLIMIT": 86800.00,
+                    "SALESREPEMPLOYEENUMBER": 1612,
+                    "CITY": "Wellington",
+                    "COUNTRY": "New Zealand",
+                    "ADDRESSLINE1": "101 Lambton Quay",
+                    "ADDRESSLINE2": "Level 11",
+                    "CUSTOMERNAME": "Extreme Desk Decorations, Ltd"
+                },
+                "pk": 412
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 80686,
+                    "CONTACTLASTNAME": "Donnermeyer",
+                    "PHONE": " +49 89 61 08 9555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 415,
+                    "CONTACTFIRSTNAME": "Michael",
+                    "CREDITLIMIT": 77000.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Munich",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Hansastr. 15",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Bavarian Collectables Imports, Co."
+                },
+                "pk": 415
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "CONTACTLASTNAME": "Hernandez",
+                    "PHONE": 2125558493,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 424,
+                    "CONTACTFIRSTNAME": "Maria",
+                    "CREDITLIMIT": 67500.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "5905 Pompton St.",
+                    "ADDRESSLINE2": "Suite 750",
+                    "CUSTOMERNAME": "Classic Legends Inc."
+                },
+                "pk": 424
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "04179",
+                    "CONTACTLASTNAME": "Feuer",
+                    "PHONE": "0342-555176",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 443,
+                    "CONTACTFIRSTNAME": "Alexander ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Leipzig",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Heerstr. 22",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Feuer Online Stores, Inc"
+                },
+                "pk": 443
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 97561,
+                    "CONTACTLASTNAME": "Lewis",
+                    "PHONE": 2035554407,
+                    "STATE": "CT",
+                    "CUSTOMERNUMBER": 447,
+                    "CONTACTFIRSTNAME": "Dan",
+                    "CREDITLIMIT": 49700.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Glendale",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "2440 Pompton St.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Gift Ideas Corp."
+                },
+                "pk": 447
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "S-844 67",
+                    "CONTACTLASTNAME": "Larsson",
+                    "PHONE": "0695-34 6555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 448,
+                    "CONTACTFIRSTNAME": "Martha",
+                    "CREDITLIMIT": 116400.00,
+                    "SALESREPEMPLOYEENUMBER": 1504,
+                    "CITY": "Bräcke",
+                    "COUNTRY": "Sweden",
+                    "ADDRESSLINE1": "Åkergatan 24",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Scandinavian Gift Ideas"
+                },
+                "pk": 448
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94217,
+                    "CONTACTLASTNAME": "Frick",
+                    "PHONE": 4085553659,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 450,
+                    "CONTACTFIRSTNAME": "Sue",
+                    "CREDITLIMIT": 77600.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "San Jose",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "3086 Ingle Ln.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "The Sharp Gifts Warehouse"
+                },
+                "pk": 450
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 8010,
+                    "CONTACTLASTNAME": "Mendel",
+                    "PHONE": "7675-3555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 452,
+                    "CONTACTFIRSTNAME": "Roland ",
+                    "CREDITLIMIT": 45300.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Graz",
+                    "COUNTRY": "Austria",
+                    "ADDRESSLINE1": "Kirchgasse 6",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mini Auto Werke"
+                },
+                "pk": 452
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 97823,
+                    "CONTACTLASTNAME": "Murphy",
+                    "PHONE": 2035559545,
+                    "STATE": "CT",
+                    "CUSTOMERNUMBER": 455,
+                    "CONTACTFIRSTNAME": "Leslie",
+                    "CREDITLIMIT": 95400.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "New Haven",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "567 North Pendale Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Super Scale Inc."
+                },
+                "pk": 455
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 10022,
+                    "CONTACTLASTNAME": "Choi",
+                    "PHONE": 2125551957,
+                    "STATE": "NY",
+                    "CUSTOMERNUMBER": 456,
+                    "CONTACTFIRSTNAME": "Yu",
+                    "CREDITLIMIT": 39800.00,
+                    "SALESREPEMPLOYEENUMBER": 1286,
+                    "CITY": "NYC",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "5290 North Pendale Street",
+                    "ADDRESSLINE2": "Suite 200",
+                    "CUSTOMERNAME": "Microscale Inc."
+                },
+                "pk": 456
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 28023,
+                    "CONTACTLASTNAME": "Sommer",
+                    "PHONE": "(91) 555 22 82",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 458,
+                    "CONTACTFIRSTNAME": "Martín ",
+                    "CREDITLIMIT": 104600.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Madrid",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "C/ Araquil, 67",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Corrida Auto Replicas, Ltd"
+                },
+                "pk": 458
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 52066,
+                    "CONTACTLASTNAME": "Ottlieb",
+                    "PHONE": "0241-039123",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 459,
+                    "CONTACTFIRSTNAME": "Sven ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Aachen",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Walserweg 21",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Warburg Exchange"
+                },
+                "pk": 459
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 50553,
+                    "CONTACTLASTNAME": "Benitez",
+                    "PHONE": 5085552555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 462,
+                    "CONTACTFIRSTNAME": "Violeta",
+                    "CREDITLIMIT": 85800.00,
+                    "SALESREPEMPLOYEENUMBER": 1216,
+                    "CITY": "New Bedford",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "1785 First Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "FunGiftIdeas.com"
+                },
+                "pk": 462
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 28023,
+                    "CONTACTLASTNAME": "Anton",
+                    "PHONE": "+34 913 728555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 465,
+                    "CONTACTFIRSTNAME": "Carmen",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Madrid",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "c/ Gobelas, 19-1 Urb. La Florida",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Anton Designs, Ltd."
+                },
+                "pk": 465
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 3150,
+                    "CONTACTLASTNAME": "Clenahan",
+                    "PHONE": "61-9-3844-6555",
+                    "STATE": "Victoria",
+                    "CUSTOMERNUMBER": 471,
+                    "CONTACTFIRSTNAME": "Sean",
+                    "CREDITLIMIT": 60300.00,
+                    "SALESREPEMPLOYEENUMBER": 1611,
+                    "CITY": "Glen Waverly",
+                    "COUNTRY": "Australia",
+                    "ADDRESSLINE1": "7 Allen Street",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Australian Collectables, Ltd"
+                },
+                "pk": 471
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "Ricotti",
+                    "PHONE": "+39 022515555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 473,
+                    "CONTACTFIRSTNAME": "Franco",
+                    "CREDITLIMIT": 34800.00,
+                    "SALESREPEMPLOYEENUMBER": 1401,
+                    "CITY": "Milan",
+                    "COUNTRY": "Italy",
+                    "ADDRESSLINE1": "20093 Cologno Monzese",
+                    "ADDRESSLINE2": "Alessandro Volta 16",
+                    "CUSTOMERNAME": "Frau da Collezione"
+                },
+                "pk": 473
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94019,
+                    "CONTACTLASTNAME": "Thompson",
+                    "PHONE": 3105553722,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 475,
+                    "CONTACTFIRSTNAME": "Steve",
+                    "CREDITLIMIT": 55400.00,
+                    "SALESREPEMPLOYEENUMBER": 1166,
+                    "CITY": "Burbank",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "3675 Furth Circle",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "West Coast Collectables Co."
+                },
+                "pk": 475
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 68306,
+                    "CONTACTLASTNAME": "Moos",
+                    "PHONE": "0621-08555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 477,
+                    "CONTACTFIRSTNAME": "Hanna ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Mannheim",
+                    "COUNTRY": "Germany",
+                    "ADDRESSLINE1": "Forsterstr. 57",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Mit Vergnügen & Co."
+                },
+                "pk": 477
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 196143,
+                    "CONTACTLASTNAME": "Semenov",
+                    "PHONE": "+7 812 293 0521",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 480,
+                    "CONTACTFIRSTNAME": "Alexander ",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Saint Petersburg",
+                    "COUNTRY": "Russia",
+                    "ADDRESSLINE1": "2 Pobedy Square",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Kremlin Collectables, Co."
+                },
+                "pk": 480
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 47625,
+                    "CONTACTLASTNAME": "Altagar,G M",
+                    "PHONE": "+ 972 9 959 8555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 481,
+                    "CONTACTFIRSTNAME": "Raanan",
+                    "CREDITLIMIT": 0.00,
+                    "SALESREPEMPLOYEENUMBER": "",
+                    "CITY": "Herzlia",
+                    "COUNTRY": "Israel",
+                    "ADDRESSLINE1": "3 Hagalim Blv.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Raanan Stores, Inc"
+                },
+                "pk": 481
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 41101,
+                    "CONTACTLASTNAME": "Roel",
+                    "PHONE": "(95) 555 82 82",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 484,
+                    "CONTACTFIRSTNAME": "José Pedro ",
+                    "CREDITLIMIT": 65700.00,
+                    "SALESREPEMPLOYEENUMBER": 1702,
+                    "CITY": "Sevilla",
+                    "COUNTRY": "Spain",
+                    "ADDRESSLINE1": "C/ Romero, 33",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Iberia Gift Imports, Corp."
+                },
+                "pk": 484
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 71270,
+                    "CONTACTLASTNAME": "Salazar",
+                    "PHONE": 2155559857,
+                    "STATE": "PA",
+                    "CUSTOMERNUMBER": 486,
+                    "CONTACTFIRSTNAME": "Rosa",
+                    "CREDITLIMIT": 72600.00,
+                    "SALESREPEMPLOYEENUMBER": 1323,
+                    "CITY": "Philadelphia",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "11328 Douglas Av.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Motor Mint Distributors Inc."
+                },
+                "pk": 486
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 94217,
+                    "CONTACTLASTNAME": "Taylor",
+                    "PHONE": 4155554312,
+                    "STATE": "CA",
+                    "CUSTOMERNUMBER": 487,
+                    "CONTACTFIRSTNAME": "Sue",
+                    "CREDITLIMIT": 60300.00,
+                    "SALESREPEMPLOYEENUMBER": 1165,
+                    "CITY": "Brisbane",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "2793 Furth Circle",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Signal Collectibles Ltd."
+                },
+                "pk": 487
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "WA1 1DP",
+                    "CONTACTLASTNAME": "Smith",
+                    "PHONE": "(171) 555-7555",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 489,
+                    "CONTACTFIRSTNAME": "Thomas ",
+                    "CREDITLIMIT": 43300.00,
+                    "SALESREPEMPLOYEENUMBER": 1501,
+                    "CITY": "London",
+                    "COUNTRY": "UK",
+                    "ADDRESSLINE1": "120 Hanover Sq.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Double Decker Gift Stores, Ltd"
+                },
+                "pk": 489
+            },
+            {
+                "fields": {
+                    "POSTALCODE": 51003,
+                    "CONTACTLASTNAME": "Franco",
+                    "PHONE": 6175552555,
+                    "STATE": "MA",
+                    "CUSTOMERNUMBER": 495,
+                    "CONTACTFIRSTNAME": "Valarie",
+                    "CREDITLIMIT": 85100.00,
+                    "SALESREPEMPLOYEENUMBER": 1188,
+                    "CITY": "Boston",
+                    "COUNTRY": "USA",
+                    "ADDRESSLINE1": "6251 Ingle Ln.",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Diecast Collectables"
+                },
+                "pk": 495
+            },
+            {
+                "fields": {
+                    "POSTALCODE": "",
+                    "CONTACTLASTNAME": "Snowden",
+                    "PHONE": "+64 9 5555500",
+                    "STATE": "",
+                    "CUSTOMERNUMBER": 496,
+                    "CONTACTFIRSTNAME": "Tony",
+                    "CREDITLIMIT": 110000.00,
+                    "SALESREPEMPLOYEENUMBER": 1612,
+                    "CITY": "Auckland  ",
+                    "COUNTRY": "New Zealand",
+                    "ADDRESSLINE1": "Arenales 1938 3'A'",
+                    "ADDRESSLINE2": "",
+                    "CUSTOMERNAME": "Kelly's Gift Shop"
+                },
+                "pk": 496
+            }
+        ],
+        "PRIMARYKEYS": "customerNumber",
+        "CONSTRAINTS": {
+            "COLUMNS": [
+                "CONSTRAINT_NAME",
+                "IS_PRIMARY_KEY",
+                "IS_UNIQUE_CONSTRAINT",
+                "TYPE_DESC",
+                "NAME"
+            ],
+            "DATA": [
+                [
+                    "PRIMARY",
+                    1,
+                    0,
+                    "def",
+                    "customerNumber"
+                ]
+            ]
+        },
+        "COLUMNS": {
+            "COLUMNS": [
+                "COLUMN_NAME",
+                "TYPE_NAME",
+                "COLUMN_SIZE",
+                "DECIMAL_DIGITS",
+                "IS_NULLABLE",
+                "REMARKS",
+                "COLUMN_DEFAULT_VALUE",
+                "CHAR_OCTET_LENGTH",
+                "ORDINAL_POSITION",
+                "IS_PRIMARYKEY",
+                "IS_FOREIGNKEY",
+                "REFERENCED_PRIMARYKEY",
+                "REFERENCED_PRIMARYKEY_TABLE"
+            ],
+            "DATA": [
+                [
+                    "customerNumber",
+                    "INT",
+                    10,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    0,
+                    1,
+                    "YES",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "customerName",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    2,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "contactLastName",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    3,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "contactFirstName",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    4,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "phone",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    5,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine1",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    6,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "addressLine2",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    7,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "city",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    8,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "state",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    50,
+                    9,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "postalCode",
+                    "VARCHAR",
+                    15,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    15,
+                    10,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "country",
+                    "VARCHAR",
+                    50,
+                    0,
+                    "NO",
+                    "",
+                    null,
+                    50,
+                    11,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ],
+                [
+                    "salesRepEmployeeNumber",
+                    "INT",
+                    10,
+                    0,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    12,
+                    "NO",
+                    "YES",
+                    "employeeNumber",
+                    "employees"
+                ],
+                [
+                    "creditLimit",
+                    "DECIMAL",
+                    10,
+                    2,
+                    "YES",
+                    "",
+                    null,
+                    0,
+                    13,
+                    "NO",
+                    "NO",
+                    "N/A",
+                    "N/A"
+                ]
+            ]
+        }
+    }
+]

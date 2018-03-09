@@ -86,33 +86,36 @@ component extends="Base" output="false" accessors="true" {
         return errors;
     }
 
-    private array function $getOrderOfOperations(required array fixtures, array sortedFixtures = []) {
+    private array function $getOrderOfOperations(required array fixtures, array sortedFixtures = [], numeric level = 1) {
         var tmpFixtures = arguments.fixtures.duplicate();
         var tmpLeftOverFixtures = arguments.fixtures.duplicate();
         var orderOfOperations = arguments.sortedFixtures.duplicate();
-
+        if (arguments.level == 1) {
+            for (i = arrayLen(tmpFixtures); i >= 1; i--) {
+                if (!arrayLen(tmpFixtures[i].foreignTables)) {
+                    orderOfOperations.append(tmpFixtures[i]);
+                    tmpLeftOverFixtures.deleteAt(i);
+                }
+            }
+            tmpFixtures = tmpLeftOverFixtures.duplicate();
+        }
         for (i = arrayLen(tmpFixtures); i >= 1; i--) {
-            if (!arrayLen(tmpFixtures[i].foreignTables)) {
+            var listOfTables = $arrayOfStructsValueList(orderOfOperations, "table");
+            var found = true;
+            for (tableName in tmpFixtures[i].foreignTables) {
+                if (!listFindNoCase(listOfTables, tableName) && tableName != tmpFixtures[i].table) {
+                    found = false;
+                }
+            }
+            if (found) {
                 orderOfOperations.append(tmpFixtures[i]);
                 tmpLeftOverFixtures.deleteAt(i);
             } else {
-                var listOfTables = $arrayOfStructsValueList(orderOfOperations, "table");
-                var found = true;
-                for (tableName in fixture.foreignTables) {
-                    if (!listFindNoCase(listOfTables, tableName)) {
-                        found = false;
-                    }
-                }
-                if (found) {
-                    orderOfOperations.append(tmpFixtures[i]);
-                    tmpLeftOverFixtures.deleteAt(i);
+                if (arrayLen(tmpLeftOverFixtures) > 1) {
+                    var newFixture = $getOrderOfOperations(arraySlice(tmpLeftOverFixtures, 2), orderOfOperations, arguments.level+1);
+                    orderOfOperations.append(newFixture);
                 } else {
-                    if (arrayLen(tmpLeftOverFixtures) > 1) {
-                        var newFixture = $getOrderOfOperations(arraySlice(tmpLeftOverFixtures, 2), orderOfOperations);
-                        orderOfOperations.append(newFixture);
-                    } else {
-                        orderOfOperations.append($getOrderOfOperations(tmpLeftOverFixtures), orderOfOperations);
-                    }
+                    orderOfOperations.append($getOrderOfOperations(tmpLeftOverFixtures), orderOfOperations, arguments.level+1);
                 }
             }
         }
@@ -121,7 +124,6 @@ component extends="Base" output="false" accessors="true" {
 
     private boolean function validateRelations(required array fixtures) {
         var referencedPrimarykeyTable = [];
-        
         for (fixture in fixtures) {
             fixture["foreignTables"] = [];
             fixture.columns = $formatFixtureColumns(fixture.columns);
