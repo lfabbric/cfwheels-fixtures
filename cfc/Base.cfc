@@ -1,6 +1,5 @@
 component {
     property string dataSourceName;
-    property string dataSourceSchema;
 
     public any function init() {
         return this;
@@ -14,7 +13,7 @@ component {
                 return new adapters.SQLServer(this.dataSourceName);
                 break;
             case "MySQL":
-                return new adapters.MySQL(this.dataSourceName, this.dataSourceSchema);
+                return new adapters.MySQL(this.dataSourceName);
                 break;
             default:
                 throw(type="Fixtures.DatabaseFactory.IncompatibleDataBase", message="This plugin does not support the database #dbDriverName#");
@@ -49,13 +48,5 @@ component {
             throw(type="Fixtures.LoadData.InvalidParseType", message="The Fixture could not be parsed correctly");
         }
         return fixtures;
-    }
-
-    public void function setDataSourceSchema(required string schemaName) {
-        this.dataSourceSchema = arguments.schemaName;
-    }
-
-    public string function getDataSourceSchema() {
-        return this.dataSourceSchema;
     }
 }
