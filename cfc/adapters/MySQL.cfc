@@ -1,9 +1,8 @@
 component implements="AdapterIF" extends="AdapterBase" {
-    public any function init(required string dataSource, string tableSchema = "") {
+    public any function init(required string dataSource) {
         super.init();
         this.database = "MySQL";
         this.dataSourceName = arguments.dataSource;
-        this.tableSchema = arguments.tableSchema;
         return this;
     }
 
@@ -11,7 +10,6 @@ component implements="AdapterIF" extends="AdapterBase" {
         var query = new query();
         query.setDatasource(this.dataSourceName);
         query.addParam(name="table", value=arguments.table, cfsqltype="cf_sql_varchar");
-        query.addParam(name="schema", value=this.tableSchema, cfsqltype="cf_sql_varchar");
         var sql = "
             select 
                 information_schema.table_constraints.constraint_name,
@@ -26,7 +24,7 @@ component implements="AdapterIF" extends="AdapterBase" {
             WHERE 
                 information_schema.table_constraints.table_name = :table
                 AND information_schema.table_constraints.constraint_type IN ('UNIQUE', 'PRIMARY KEY')
-                AND information_schema.table_constraints.table_schema = :schema
+                AND information_schema.table_constraints.table_schema = database()
         ";
         query.setSql(sql = sql);
         return query.execute().getResult();
@@ -36,14 +34,13 @@ component implements="AdapterIF" extends="AdapterBase" {
         var query = new query();
         query.setDatasource(this.dataSourceName);
         query.addParam(name="table", value=arguments.table, cfsqltype="cf_sql_varchar");
-        query.addParam(name="schema", value=this.tableSchema, cfsqltype="cf_sql_varchar");
         query.setSql("
             SELECT 1
             FROM information_schema.tables
             WHERE
                 table_type = 'BASE TABLE' 
                 AND table_name = :table
-                AND table_schema = :schema
+                AND table_schema = database()
         ");
         results = query.execute().getResult();
         return results.recordCount;
