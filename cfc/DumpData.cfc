@@ -25,10 +25,8 @@ component extends="Base" output="false" accessors="true" {
                 response.columns = dbinfo.columns();
                 response.constraints = daoAdapter.getConstraints(table);
                 response.records = [];
-                // cant find non-plurar tables
-                var tmpModel = new wheels.Model().$initModelClass("#table#", "");
-                var results = tmpModel.findAll(maxRows=this.maxRows);
-                var primaryKeys = tmpModel.primaryKeys();
+                var results = daoAdapter.findAll(table, this.maxRows);
+                var primaryKeys = $getPrimaryKeys(response.columns);
                 response.primaryKeys = primaryKeys;
                 for (result in results) {
                     response.records.append({
@@ -42,6 +40,16 @@ component extends="Base" output="false" accessors="true" {
             }
         }
         return $createFixture(serializeJson(output), arguments.filePath);
+    }
+
+    private string function $getPrimaryKeys(required query columns) {
+        var primaryKeys = [];
+        for (column in arguments.columns) {
+            if (column.is_primarykey) {
+                arrayAppend(primaryKeys, column.column_name);
+            }
+        } 
+        return arrayToList(primaryKeys);
     }
 
     private string function $createFixture(required string jsonOutput, required string filePath) {

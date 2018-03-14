@@ -21,6 +21,19 @@ component {
         }
     }
 
+    public array function queryToArrayOfStructs(required query results) {
+        var resultArray = [];
+        var columnList = arguments.results.getColumnList();
+        for (i = 1; i <= arguments.results.recordCount; i++) { 
+            var result = {};
+            for (j = 1; j <= arrayLen(columnList); j++) {
+                result[columnList[j]] = arguments.results[columnList[j]][i];
+            }
+            arrayAppend(resultArray, result);
+        }
+        return resultArray;
+    }
+
     public string function getSqlType(required string fieldName) {
         var sqlTypeResults = {
             "#this.MICROSOFT#" = {
