@@ -7,9 +7,7 @@ component extends="wheels.Test" {
             "indent"= 4,
             "path"= "/plugins/fixtures/tests/fixtures/",
             "database"= "ppsmysqlloc",
-            "unittest_database"= "store",
-            "unittest_database_schema"= "ppstest",
-            "database_schema"= "store"
+            "unittest_database"= "store"
         };
         variables.loc.previousDataSourceName = get("dataSourceName");
     }
