@@ -69,6 +69,23 @@ component implements="AdapterIF" extends="AdapterBase" {
         return errors;
     }
 
+    public array function findAll(required string table, numeric maxRows) {
+        var query = new query();
+        query.setDatasource(this.dataSourceName);
+        var sql = "
+            SELECT *
+            FROM #arguments.table#
+        ";
+        if (arguments.maxRows >= 1) {
+            sql &= "
+                LIMIT #arguments.maxRows#
+            ";
+        }
+        query.setSQL(sql);
+        results = query.execute().getResult();
+        return queryToArrayOfStructs(results);
+    }
+
     public array function dropTable(required string table) {
         var initialForeignKeyCheckStatus = getForeignKeyCheckStatus();
         setForeignKeyCheckStatus(0);

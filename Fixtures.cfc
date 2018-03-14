@@ -59,7 +59,7 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
     public string function $getFixtureDataSourceName(boolean isUnitTest = true) {
         var settings = $loadFixtureSettings(argumentCollection=arguments);
         var dataSourceName = get("dataSourceName");
-        if (settings.keyExists("database") && len(settings.database)) {
+        if (settings.keyExists("database") && len(settings.database) && !arguments.isUnitTest) {
             dataSourceName = settings.database;
         } else if (settings.keyExists("unittest_database") && len(settings.unittest_database) && arguments.isUnitTest) {
             dataSourceName = settings.unittest_database;

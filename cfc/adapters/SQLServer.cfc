@@ -7,6 +7,21 @@ component implements="AdapterIF" extends="AdapterBase" {
         return this;
     }
 
+    public array function findAll(required string table, numeric maxRows) {
+        var query = new query();
+        query.setDatasource(this.dataSourceName);
+        var sql = "SELECT";
+        if (arguments.maxRows >= 1) {
+            sql &= " TOP #arguments.maxRows#";
+        }
+        sql &= " *
+            FROM #arguments.table#
+        ";
+        query.setSQL(sql);
+        var results =  query.execute().getResult();
+        return queryToArrayOfStructs(results);
+    }
+
     public query function getConstraints(required string table) {
         var query = new query();
         query.setDatasource(this.dataSourceName);
@@ -72,7 +87,6 @@ component implements="AdapterIF" extends="AdapterBase" {
         var errors = [];
         var query = new query();
         query.setDatasource(this.dataSourceName);
-        
         try {
             var sql = "
                 SELECT 
