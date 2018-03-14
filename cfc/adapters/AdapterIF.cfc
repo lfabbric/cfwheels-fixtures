@@ -1,5 +1,5 @@
 interface {
-    any function init(required string dataSource, string tableSchema);
+    any function init(required string dataSource);
     boolean function tableExists(required string table);
     array function createTable(required array tableDefinition, required array tableConstraints, required string table);
     array function dropTable(required string table);

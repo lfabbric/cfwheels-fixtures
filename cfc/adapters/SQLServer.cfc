@@ -1,9 +1,8 @@
 component implements="AdapterIF" extends="AdapterBase" {
-    public any function init(required string dataSource, string tableSchema = "") {
+    public any function init(required string dataSource) {
         super.init();
         this.database = "SQLServer";
         this.dataSourceName = arguments.dataSource;
-        this.tableSchema = arguments.tableSchema;
         return this;
     }
 
