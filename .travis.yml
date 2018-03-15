@@ -2,6 +2,8 @@ language: java
 sudo: required
 jdk:
   - oraclejdk8
+services:
+  - mysql
 env:
   - ENGINE=lucee@5 DB=MySQL DBCLASS=org.gjt.mm.mysql.Driver
   - ENGINE=adobe@2016 DB=MySQL DBCLASS=com.mysql.jdbc.Driver
@@ -20,10 +22,11 @@ install:
   # Install Master Branch; nb, installed into folder of the git repo name
   - box install cfwheels/cfwheels
   # Install the Plugin: use gitHub path to get the absolute latest
-  - box install lfabbric/cfwheels-fixtures
+  - box install lfabbric/cfwheels-fixtures#Issues-15-Travis-CI-Integration
 before_script:
-  - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE store;'; fi
-  - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE storetest;'; fi
+  - mysql -u root --password="" < artifacts/mysql-createdatabase.sql
+  # - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE store;'; fi
+  # - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE storetest;'; fi
   # Master branch has a bunch of server.jsons we can use: lucee4 | lucee5 | cf10 | cf11 | cf2016
   - box server start cfengine=$ENGINE port=8500
   - if [[ "$DB" == "MySQL" ]]; then box cfconfig datasource save name=store database=store dbdriver=$DB class="$DBCLASS" host=127.0.0.1 port=3306 username=travis password="" blob=true clob=true; fi
