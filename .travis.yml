@@ -7,7 +7,6 @@ services:
 env:
   - ENGINE=lucee@5 DB=MySQL DBCLASS=org.gjt.mm.mysql.Driver
   - ENGINE=adobe@2016 DB=MySQL DBCLASS=com.mysql.jdbc.Driver
-  - ENGINE=adobe@11 DB=MySQL DBCLASS=com.mysql.jdbc.Driver
 before_install:
   # Get Commandbox
   - sudo apt-key adv --keyserver keys.gnupg.net --recv 6DA70622
