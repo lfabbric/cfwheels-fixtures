@@ -26,6 +26,7 @@ install:
   - box install lfabbric/cfwheels-fixtures#Issues-15-Travis-CI-Integration
 before_script:
   - mysql -u root --password="" < artifacts/mysql-createdatabase.sql
+  - echo "show databases;" | mysql -u root --password=""
   # - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE store;'; fi
   # - if [[ "$DB" == "MySQL" ]]; then mysql -e 'CREATE DATABASE storetest;'; fi
   # Master branch has a bunch of server.jsons we can use: lucee4 | lucee5 | cf10 | cf11 | cf2016
@@ -37,7 +38,7 @@ before_script:
   # Basically, we now run the wheels CLI test runner, pointing it to the current server
   - box cfconfig datasource list
 script: >
-  testResults="$(box wheels test type=fixtures servername=$ENGINE)";
+  testResults="$(box wheels test type=fixtures)";
   echo "$testResults";
   if ! grep -i "\Tests Complete: All Good!" <<< $testResults;  then exit 1; fi
 notifications:
