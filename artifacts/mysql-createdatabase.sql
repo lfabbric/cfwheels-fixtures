@@ -17,7 +17,6 @@
 
 CREATE DATABASE IF NOT EXISTS `storetest` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 CREATE DATABASE IF NOT EXISTS `store` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-CREATE USER 'travis'@'localhost' IDENTIFIED BY 'travis';
 GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON *.* TO 'travis'@'localhost';
 USE `store`;
 --
