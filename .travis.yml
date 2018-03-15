@@ -17,6 +17,7 @@ install:
   - sudo apt-get update && sudo apt-get --assume-yes install commandbox
   # Check it's working
   - box version
+  - box install commandbox-cfconfig
   # Install CLI: needed to repackage the plugin to a zip on install
   - box install cfwheels-cli
   # Install Master Branch; nb, installed into folder of the git repo name
