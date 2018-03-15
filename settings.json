@@ -3,5 +3,5 @@
     "indent": 4,
     "path": "/tests/fixtures/",
     "database": "",
-    "unittest_database": "ppsmysqltest"
+    "unittest_database": "storetest"
 }
