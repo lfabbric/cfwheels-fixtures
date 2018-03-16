@@ -2,21 +2,43 @@
     "name":"CFWheels Fixture Support",
     "version":"0.0.3",
     "author":"Landon Fabbricino",
-    "location":"lfabbric/cfwheels-fixtures#v0.0.3",
+    "location":"lfabbric/cfwheels-fixtures#v0.0.4",
     "directory":"/plugins/",
     "createPackageDirectory":true,
     "packageDirectory":"fixtures",
     "slug":"fixtures",
     "type":"cfwheels-plugins",
-    "homepage":"https://github.com/lfabbric/cfwheels-fixtures",
     "shortDescription":"CFWheels 2.x Plugin utility to load and dump data from a database",
-    "keywords":"fixtures dumpdata loaddata",
+    "keywords":[
+        "fixtures", 
+        "fixture",
+        "dumpdata", 
+        "loaddata"
+    ],
     "private":false,
+    "homepage":"https://github.com/lfabbric/cfwheels-fixtures",
+    "documentation": "https://github.com/lfabbric/cfwheels-fixtures",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/lfabbric/cfwheels-fixtures"
+    },
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"https://github.com/lfabbric/cfwheels-fixtures/blob/master/LICENSE"
+        }
+    ], 
+    "engines" : [
+        { "type" : "adobe", "version" : ">=2016" }
+    ],  
     "scripts":{
         "postVersion":"package set location='lfabbric/cfwheels-fixtures#v`package version`'",
         "postPublish":"!git push --follow-tags",
         "patch-release":"bump --patch && publish",
         "minor-release":"bump --minor && publish",
         "major-release":"bump --major && publish"
-    }
+    },
+    "ignore":[
+        "artifacts"
+    ]
 }
