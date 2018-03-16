@@ -40,7 +40,6 @@
         "major-release":"bump --major && publish"
     },
     "ignore":[
-        "artifacts",
-        "tests"
+        "artifacts"
     ]
 }
