@@ -1,8 +1,8 @@
 {
     "name":"CFWheels Fixture Support",
-    "version":"0.0.8",
+    "version":"0.0.9",
     "author":"Landon Fabbricino",
-    "location":"lfabbric/cfwheels-fixtures#v0.0.8",
+    "location":"lfabbric/cfwheels-fixtures#v0.0.9",
     "directory":"/plugins/",
     "createPackageDirectory":true,
     "packageDirectory":"fixtures",
@@ -10,14 +10,14 @@
     "type":"cfwheels-plugins",
     "shortDescription":"CFWheels 2.x Plugin utility to load and dump data from a database",
     "keywords":[
-        "fixtures", 
+        "fixtures",
         "fixture",
-        "dumpdata", 
+        "dumpdata",
         "loaddata"
     ],
     "private":false,
     "homepage":"https://github.com/lfabbric/cfwheels-fixtures",
-    "documentation": "https://github.com/lfabbric/cfwheels-fixtures",
+    "documentation":"https://github.com/lfabbric/cfwheels-fixtures",
     "repository":{
         "type":"git",
         "URL":"https://github.com/lfabbric/cfwheels-fixtures"
@@ -27,11 +27,17 @@
             "type":"MIT",
             "URL":"https://github.com/lfabbric/cfwheels-fixtures/blob/master/LICENSE"
         }
-    ], 
-    "engines" : [
-        { "type" : "adobe", "version" : ">=2016" },
-        { "type" : "lucee", "version" : ">=5" }
-    ],  
+    ],
+    "engines":[
+        {
+            "type":"adobe",
+            "version":">=2016"
+        },
+        {
+            "type":"lucee",
+            "version":">=5"
+        }
+    ],
     "scripts":{
         "postVersion":"package set location='lfabbric/cfwheels-fixtures#v`package version`'",
         "postPublish":"!git push --follow-tags",
