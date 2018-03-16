@@ -4,6 +4,15 @@
 
 The cfwheels fixtures provides utilities to dump database tables into json fixtures or load json fixtures and create/populate database tables.
 
+## Requirements
+Coldfusion
+ - Lucee 5
+ - Adobe Coldfusion 2016
+
+Databases
+ - SQL Server
+ - MySQL
+
 ## Configuration
 
 create a fixtures folder in your cfwheels tests folder. 
