@@ -21,6 +21,7 @@ component implements="AdapterIF" extends="AdapterBase" {
             LEFT JOIN information_schema.key_column_usage ON 
                 information_schema.table_constraints.table_name = information_schema.key_column_usage.table_name
                 AND information_schema.table_constraints.constraint_name = information_schema.key_column_usage.constraint_name 
+                AND information_schema.table_constraints.table_schema = information_schema.key_column_usage.table_schema
             WHERE 
                 information_schema.table_constraints.table_name = :table
                 AND information_schema.table_constraints.constraint_type IN ('UNIQUE', 'PRIMARY KEY')

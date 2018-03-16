@@ -2,7 +2,7 @@ component extends="wheels.Test" {
 
     function setup() {
         variables.loc = {};
-        variables.loc.settings = {
+        variables.loc.mysql.settings = {
             "format"= "json",
             "indent"= 4,
             "path"= "/plugins/fixtures/tests/fixtures/",
@@ -16,37 +16,59 @@ component extends="wheels.Test" {
         set(dataSourceName = variables.loc.previousDataSourceName);
     }
 
+    function getDataBaseType() {
+        cfdbinfo( name="dbinfo", type="version", datasource=loc.mysql.settings.database );
+        return lcase(replace(dbInfo.database_productname, " ", "-", "all"));
+    }
+
     function test_dump_mysql_table() {
+        if (getDataBaseType() != "mysql") {
+            loc.message = "This test has been Skipped - The test runner is using on a different database: #getDataBaseType()#";
+            debug("loc.message");
+            assert(true);
+            return;
+        }
         var previousDataSourceName = get("dataSourceName");
-        set(dataSourceName = loc.settings.database);
+        set(dataSourceName = loc.mysql.settings.database);
         dumpData(
             tables = ["offices"], 
             filePath = "plugins/fixtures/tests/fixtures/offices2.json",
             overWriteFileEnabled = true,
-            settings = variables.loc.settings
+            settings = variables.loc.mysql.settings
         );
-        if (fileExists(expandpath(variables.loc.settings.path & "offices2.json"))) {
+        if (fileExists(expandpath(variables.loc.mysql.settings.path & "offices2.json"))) {
             assert(true);
-            fileDelete(expandpath(variables.loc.settings.path & "offices2.json"));
+            fileDelete(expandpath(variables.loc.mysql.settings.path & "offices2.json"));
         } else {
             assert(false);
         }
     }
 
     function test_dump_mysql_table_correct_content() {
+        if (getDataBaseType() != "mysql") {
+            loc.message = "This test has been Skipped - The test runner is using on a different database: #getDataBaseType()#";
+            debug("loc.message");
+            assert(true);
+            return;
+        }
         var previousDataSourceName = get("dataSourceName");
-        set(dataSourceName = loc.settings.database);
+        set(dataSourceName = loc.mysql.settings.database);
         dumpData(
             tables = ["offices"], 
             filePath = "plugins/fixtures/tests/fixtures/offices2.json",
             overWriteFileEnabled = true,
-            settings = variables.loc.settings
+            settings = variables.loc.mysql.settings
         );
-        if (fileExists(expandpath(variables.loc.settings.path & "offices2.json"))) {
-            assert(true);
-            var fixtureContent = fileRead(expandpath(variables.loc.settings.path & "offices2.json"));
+        if (fileExists(expandpath(variables.loc.mysql.settings.path & "offices2.json"))) {
+            var fixtureContent = fileRead(expandpath(variables.loc.mysql.settings.path & "offices2.json"));
             var serializedContent = deSerializeJSON(fixtureContent);
             
+            if (!arrayLen(serializedContent)) {
+                message = "DataDump failed - No data found";
+                debug("message");
+                assert(false);
+            }
+
             if (!serializedContent[1].keyExists("columns") && !arrayLen(serializedContent[1].columns)) {
                 message = "Missing the columns key";
                 debug("message");
@@ -83,7 +105,7 @@ component extends="wheels.Test" {
                 assert(false);
             }
 
-            fileDelete(expandpath(variables.loc.settings.path & "offices2.json"));
+            fileDelete(expandpath(variables.loc.mysql.settings.path & "offices2.json"));
         } else {
             assert(false);
         }
