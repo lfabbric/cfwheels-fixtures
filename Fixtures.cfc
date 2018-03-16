@@ -70,7 +70,7 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
         lock name = "getSettings" timeout = "5" type = "readonly" {
             if (application.keyExists("plugins") && application.plugins.keyExists("fixtures") && application.plugins.fixtures.keyExists("createdat")) {
                 if (application.plugins.fixtures.keyExists("settings") && datediff("s", application.plugins.fixtures.createdat, now()) <= 15) {
-                    return application.plugins.fixtures.settings.duplicate();
+                    return duplicate(application.plugins.fixtures.settings);
                 }
             }
         }
@@ -86,7 +86,7 @@ component hint="cfwheels fixture support" output="false" mixin="global" {
                     "settings" = settings
                 };
             }
-            return application.plugins.fixtures.settings.duplicate();
+            return duplicate(application.plugins.fixtures.settings);
         }
         return {};
     }

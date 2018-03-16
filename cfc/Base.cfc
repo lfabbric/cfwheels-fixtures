@@ -5,14 +5,14 @@ component {
         return this;
     }
 
-    public adapters.AdapterIF function getDatabaseFactory() {
-        var dbInfo = new dbinfo(dataSource = this.dataSourceName);
-        var dbDriverName = replace(dbInfo.version().database_productname, " ", "-", "all");
+    public any function getDatabaseFactory() {
+        cfdbinfo( name="dbinfo", type="version", datasource=this.dataSourceName );
+        var dbDriverName = replace(dbInfo.database_productname, " ", "-", "all");
         switch(dbDriverName) {
-            case "Microsoft-SQL-Server":
+            case ("Microsoft-SQL-Server"):
                 return new adapters.SQLServer(this.dataSourceName);
                 break;
-            case "MySQL":
+            case ("MySQL"):
                 return new adapters.MySQL(this.dataSourceName);
                 break;
             default:

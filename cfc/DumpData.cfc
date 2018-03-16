@@ -16,13 +16,12 @@ component extends="Base" output="false" accessors="true" {
         var daoAdapter = getDatabaseFactory();
         var errors = {};
         var output = [];
-        var dbinfo  = new dbinfo(dataSource = this.dataSourceName);
         for (table in this.tables) {
-            dbinfo.setTable(table);
+            cfdbinfo( name="columns", type="columns", table=table, datasource=this.dataSourceName );
             try {
                 var response = {};
                 response.table = table;
-                response.columns = dbinfo.columns();
+                response.columns = columns;
                 response.constraints = daoAdapter.getConstraints(table);
                 response.records = [];
                 var results = daoAdapter.findAll(table, this.maxRows);

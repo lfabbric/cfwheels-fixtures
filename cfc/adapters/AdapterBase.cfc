@@ -10,8 +10,8 @@ component {
     }
 
     public string function getDatabaseType() {
-        var dbInfo = new dbinfo(dataSource = this.dataSourceName);
-        var driverName = dbInfo.version().driver_name;
+        cfdbinfo( name="dbinfo", type="version", datasource=this.dataSourceName );
+        var driverName = dbInfo.driver_name;
         for (type in this.dataBaseTypes) {
             if (driverName.findNoCase(type)) {
                 return type;
@@ -24,6 +24,9 @@ component {
     public array function queryToArrayOfStructs(required query results) {
         var resultArray = [];
         var columnList = arguments.results.getColumnList();
+        if (!isArray(columnList)) {
+            columnList = listToArray(columnList);
+        }
         for (i = 1; i <= arguments.results.recordCount; i++) { 
             var result = {};
             for (j = 1; j <= arrayLen(columnList); j++) {

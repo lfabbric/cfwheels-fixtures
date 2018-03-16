@@ -62,7 +62,7 @@ component extends="Base" output="false" accessors="true" {
 
     // ------------------------------------------------------------------------
 
-    private array function $executeCommands(required array orderOfOperations) {
+    public array function $executeCommands(required array orderOfOperations) {
         var daoAdapter = getDatabaseFactory();
         var errors = [];
         for (item in arguments.orderOfOperations) {
@@ -98,7 +98,7 @@ component extends="Base" output="false" accessors="true" {
     }
 
     private array function $getOrderOfOperations(required array fixtures) {
-        var tmpFixtures = arguments.fixtures.duplicate();
+        var tmpFixtures = duplicate(arguments.fixtures);
         positionList = $getOrdredList(tmpFixtures);
         var fixtureLength = arrayLen(tmpFixtures);
         for (var i = 1; i <= fixtureLength; i++) {
